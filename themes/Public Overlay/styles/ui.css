@@ -1,0 +1,709 @@
+@import "theme.css";
+
+#timerdiv {
+  width: 187px;
+  height: 50px;
+  left: 866px;
+  top: 57px;
+  position: absolute;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 50px;
+  background-color: var(--secondarycolor);
+  border-radius: 10px;
+  opacity: 0;
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+#timerminute {
+  font-size: 40px;
+  bottom: 2px;
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+#timerms {
+  font-size: 25px;
+  bottom: 2px;
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.overlay {
+  width: 275px;
+  height: 131px;
+  position: absolute;
+  display: block;
+}
+
+.black {
+  border-radius: 10px 10px 0px 0px;
+  width: 295px;
+  height: 41px;
+  bottom: 43px;
+  left: 0px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+
+.color {
+  width: 275px;
+  height: 2px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#leftoverlay1 {
+  left: 0px;
+}
+
+#leftoverlay2 {
+  left: 0px;
+}
+
+#playercolor3 {
+  right: 0px;
+}
+
+#playercolor4 {
+  right: 0px;
+
+}
+
+.overlaysites {
+  bottom: 158px;
+  width: 640px;
+  height: 88px;
+  position: absolute;
+}
+
+#leftoverlay {
+  left: 112px;
+}
+
+#rightoverlay {
+  right: 112px;
+}
+
+.combo {
+  font-size: 50px;
+  bottom: 36px;
+  position: absolute;
+  line-height: 50px;
+  font-family: 'BerlinTypeOffice-Bold';
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000;
+}
+
+.hit {
+  font-size: 20px;
+  bottom: 0px;
+  line-height: 25px;
+  vertical-align: center;
+}
+
+.percent {
+  font-size: 25px;
+  bottom: 0px;
+  line-height: 25px;
+  vertical-align: center;
+}
+
+.percentage {
+  font-size: 65px;
+  bottom: 7px;
+  line-height: 50px;
+  vertical-align: center;
+  font-family: 'BerlinTypeOffice-Bold';
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000;
+}
+
+.nana {
+  font-size: 30px;
+  top: 17px;
+  line-height: 30px;
+  vertical-align: center;
+  position: absolute;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000;
+}
+
+.nanapercent {
+  font-size: 15px;
+  bottom: 0px;
+  line-height: 25px;
+  vertical-align: center;
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+#nana1 {
+  opacity: 0;
+  right: 188px;
+  position: absolute;
+}
+
+#nana2 {
+  opacity: 0;
+  right: 188px;
+  position: absolute;
+}
+
+#nana3 {
+  opacity: 0;
+  right: 3px;
+  position: absolute;
+}
+
+#nana4 {
+  opacity: 0;
+  right: 3px;
+  position: absolute;
+}
+
+#playerpercentage1 {
+  opacity: 0;
+  right: 2px;
+  position: absolute;
+}
+
+#playerpercentage2 {
+  opacity: 0;
+  right: 2px;
+  position: absolute;
+}
+
+#playerpercentage3 {
+  opacity: 0;
+  right: 168px;
+  position: absolute;
+}
+
+#playerpercentage4 {
+  opacity: 0;
+  right: 168px;
+  position: absolute;
+}
+
+#playercombo4 {
+  right: 2px;
+  position: absolute;
+}
+
+#playercombo3 {
+  right: 2px;
+  position: absolute;
+}
+
+#playercombo2 {
+  left: 2px;
+  position: absolute;
+}
+
+#playercombo1 {
+  left: 2px;
+  position: absolute;
+}
+
+#playeroverlay1 {
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+}
+
+#playeroverlay2 {
+  right: 0px;
+  opacity: 0;
+  position: absolute;
+}
+
+#playeroverlay3 {
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+}
+
+#playeroverlay4 {
+  right: 0px;
+  opacity: 0;
+  position: absolute;
+}
+
+.stockblack {
+  filter: brightness(0%);
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+.stock {
+  width: 144px;
+  height: 36px;
+  position: absolute;
+  top: 2px;
+}
+
+#playerstock1 {
+  left: 0px;
+}
+
+#playerstock2 {
+  left: 0px;
+}
+
+#playerstock3 {
+  right: 0px;
+}
+
+#playerstock4 {
+  right: 0px;
+}
+
+.stockcolor {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+}
+
+img {
+  width: 33px;
+  height: 33px;
+}
+
+.ps {
+  width: 36px;
+  opacity: 0;
+  height: 36px;
+  top: 0px;
+  position: absolute;
+}
+
+#gameEnd {
+  color: #ffffff;
+  font-size: 250px;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: center;
+  opacity: 0;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 100vh;
+  text-transform: uppercase;
+}
+
+#gameEndSpan {
+
+  text-shadow: -4px -4px 0 #000,
+    -4px -3px 0 #000,
+    -4px -2px 0 #000,
+    -4px -1px 0 #000,
+    -4px 0px 0 #000,
+    -4px 1px 0 #000,
+    -4px 2px 0 #000,
+    -4px 3px 0 #000,
+    -4px 4px 0 #000,
+    -3px -4px 0 #000,
+    -3px -3px 0 #000,
+    -3px -2px 0 #000,
+    -3px -1px 0 #000,
+    -3px 0px 0 #000,
+    -3px 1px 0 #000,
+    -3px 2px 0 #000,
+    -3px 3px 0 #000,
+    -3px 4px 0 #000,
+    -2px -4px 0 #000,
+    -2px -3px 0 #000,
+    -2px -2px 0 #000,
+    -2px -1px 0 #000,
+    -2px 0px 0 #000,
+    -2px 1px 0 #000,
+    -2px 2px 0 #000,
+    -2px 3px 0 #000,
+    -2px 4px 0 #000,
+    -1px -4px 0 #000,
+    -1px -3px 0 #000,
+    -1px -2px 0 #000,
+    -1px -1px 0 #000,
+    -1px 0px 0 #000,
+    -1px 1px 0 #000,
+    -1px 2px 0 #000,
+    -1px 3px 0 #000,
+    -1px 4px 0 #000,
+    -0px -4px 0 #000,
+    -0px -3px 0 #000,
+    -0px -2px 0 #000,
+    -0px -1px 0 #000,
+    -0px 0px 0 #000,
+    -0px 1px 0 #000,
+    -0px 2px 0 #000,
+    -0px 3px 0 #000,
+    -0px 4px 0 #000,
+    -4px -4px 0 #000,
+    4px -3px 0 #000,
+    4px -2px 0 #000,
+    4px -1px 0 #000,
+    4px 0px 0 #000,
+    4px 1px 0 #000,
+    4px 2px 0 #000,
+    4px 3px 0 #000,
+    4px 4px 0 #000,
+    3px -4px 0 #000,
+    3px -3px 0 #000,
+    3px -2px 0 #000,
+    3px -1px 0 #000,
+    3px 0px 0 #000,
+    3px 1px 0 #000,
+    3px 2px 0 #000,
+    3px 3px 0 #000,
+    3px 4px 0 #000,
+    2px -4px 0 #000,
+    2px -3px 0 #000,
+    2px -2px 0 #000,
+    2px -1px 0 #000,
+    2px 0px 0 #000,
+    2px 1px 0 #000,
+    2px 2px 0 #000,
+    2px 3px 0 #000,
+    2px 4px 0 #000,
+    1px -4px 0 #000,
+    1px -3px 0 #000,
+    1px -2px 0 #000,
+    1px -1px 0 #000,
+    1px 0px 0 #000,
+    1px 1px 0 #000,
+    1px 2px 0 #000,
+    1px 3px 0 #000,
+    1px 4px 0 #000;
+}
+
+.gameEndVertical {
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  background-color: white;
+}
+
+#gameEndVertical1 {
+  left: 282px;
+  top: 359px;
+  position: absolute;
+}
+
+#gameEndVertical2 {
+  right: 282px;
+  bottom: 359px;
+  position: absolute;
+}
+
+#tournamentnamediv {
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px 0px black;
+  background-color: rgb(var(--primarycolor));
+  width: fit-content;
+  height: 50px;
+  top: 5px;
+  opacity: 0;
+  line-height: 50px;
+  position: absolute;
+}
+
+#tournamentname {
+  size: 35px;
+}
+
+#phasediv {
+  width: 322px;
+  height: 60px;
+  overflow: hidden;
+  left: 796px;
+  top: 892px;
+  position: absolute;
+  background-color: rgb(var(--primarycolor));
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+}
+
+#phase {
+  font-size: 21px;
+  line-height: 21px;
+  white-space: nowrap;
+  text-align: center;
+
+}
+
+#bestof {
+  font-family: 'BerlinType-Regular';
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.perc1 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.perc2 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.perc3 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.perc4 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.nanaperc1 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.nanaperc2 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.nanaperc3 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.nanaperc4 {
+  font-family: 'BerlinTypeOffice-Bold';
+}
+
+.playercard {
+  width: 295px;
+  height: 41px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(var(--secondarycolor));
+  bottom: 0px;
+  position: absolute;
+
+}
+
+.animation {
+  bottom: 0px;
+  left: 0px;
+  width: 275px;
+  height: 131px;
+  position: absolute;
+  overflow: visible;
+}
+
+#tournament {
+  width: 1920px;
+  height: 61px;
+  left: 0px;
+  top: 950px;
+  z-index: 33;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 30px;
+  position: absolute;
+}
+
+.links {
+  line-height: 20px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+.backgroundlink {
+  /* background-color: var(--secondarycolor);
+  border-radius: 10px; */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.backgroundlink object {
+  filter: drop-shadow(-1px -1px 0px #000000) drop-shadow(1px -1px 0px #000000) drop-shadow(1px 1px 0px #000000) drop-shadow(-1px 1px 0px #000000);
+}
+
+#smashggbg {
+  opacity: 0;
+}
+
+#introsingles {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 2000;
+  width: 1920px;
+  height: 1080px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+#introdoubles {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 2000;
+  width: 1920px;
+  height: 1080px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.intro_divs {
+  background-color: rgb(var(--primarycolor));
+}
+
+.card {
+  width: 290px;
+  height: 41px;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+}
+
+.card object {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  /* left: 6px; */
+}
+
+.cardimage {
+  background-size: contain;
+}
+
+.leftpicture {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  left: 6px;
+}
+
+.rightpicture {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  right: 6px;
+}
+
+.cardteam {
+  opacity: 0;
+}
+
+.cardtwitter {
+  opacity: 0;
+}
+
+.cardtwitch {
+  opacity: 0;
+}
+
+#playercountry1 {
+  opacity: 0;
+}
+
+#playercountry2 {
+  opacity: 0;
+}
+
+.leftplayerdiv {
+  left: 42px;
+  top: 0px;
+  position: absolute;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
+  line-height: 42px;
+}
+
+.rightplayerdiv {
+  right: 42px;
+  top: 0px;
+  position: absolute;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
+  line-height: 42px;
+}
+
+.playerpronoun {
+  font-size: 15px;
+}
+
+.score {
+  width: 43px;
+  height: 41px;
+  top: 0px;
+  position: absolute;
+  line-height: 41px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#singlesteam1score {
+  right: 0px;
+}
+
+#singlesteam2score {
+  left: 0px;
+}
+
+#single1scorevalue {
+  opacity: 0;
+}
+
+#single2scorevalue {
+  opacity: 0;
+}
+
+.grandfinal {
+  color: #9c9c9c;
+}
+
+#teamdivs {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.teamdiv {
+  width: auto;
+  height: 41px;
+  border-radius: 10px;
+  background-color: rgb(var(--secondarycolor));
+  bottom: 69px;
+  position: absolute;
+  display: block;
+  font-size: 25px;
+  opacity: 0;
+}

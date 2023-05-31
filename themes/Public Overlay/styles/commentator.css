@@ -1,0 +1,120 @@
+@import "theme.css";
+
+.top {
+  width: 366px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 10px;
+  background-color: rgb(var(--primarycolor));
+  opacity: 0;
+}
+
+.bottom {
+  width: 366px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 10px;
+  background-color: rgb(var(--secondarycolor));
+  opacity: 0;
+
+}
+
+#leftcomm {
+  width: 366px;
+  height: 72px;
+  left: 297px;
+  top: 893px;
+  position: absolute
+}
+
+#rightcomm {
+  width: 366px;
+  height: 72px;
+  right: 297px;
+  top: 893px;
+  position: absolute
+}
+
+.commpronoun {
+  font-size: 15px;
+  text-transform: lowercase;
+}
+
+.commteam {
+  color: #bfbfbf;
+}
+
+#playertext2 {
+  right: 42px;
+  text-align: right;
+  position: absolute;
+  line-height: 42px;
+}
+
+#playertext1 {
+  left: 42px;
+  position: absolute;
+  line-height: 42px;
+}
+
+.flag {
+  background-size: contain;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+}
+
+#c1flag {
+  left: 6px;
+}
+
+#c2flag {
+  right: 6px;
+}
+
+#c1teamicon {
+  right: 6px;
+}
+
+#c2teamicon {
+  left: 6px;
+}
+
+.twittericon {
+  background-size: contain;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+}
+
+#lefttwittericon {
+  left: 5px;
+}
+
+#c1twitter {
+  left: 30px;
+  position: absolute;
+  line-height: 27px;
+}
+
+#righttwittericon {
+  right: 5px;
+}
+
+#c2twitter {
+  right: 30px;
+  line-height: 27px;
+  position: absolute;
+}

@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/slippistatsset.js"></script>
+    <script src="assets/script/jquery.js"></script>
+    <script src="assets/script/jquery-ui.js"></script>
+    <link rel="stylesheet" href="styles/slippistatsset.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div id="headerdiv">
+        <!-- Player Divs -->
+        <div id="country1" class="country"></div>
+        <div id="playerdiv1" class="playerdiv">
+            <div id="playernamediv1" class="playernamediv">
+                <div id="playerfield1" class="playerfield">
+                    <span id="playername1" class="playername"></span>
+                    <span id="playerpronoun1" class="playerpronoun"></span>
+                </div>
+                <span id="playerteam1" class="playerteam"></span>
+            </div>
+        </div>
+        <div id="country2" class="country"></div>
+        <div id="playerdiv2" class="playerdiv">
+            <div id="playernamediv2" class="playernamediv">
+                <div id="playerfield2" class="playerfield">
+                    <span id="playerpronoun2" class="playerpronoun"></span>
+                    <span id="playername2" class="playername"></span>
+                </div>
+                <span id="playerteam2" class="playerteam"></span>
+            </div>
+        </div>
+        <!-- Tournament Phase/Score Divs -->
+        <div id="tournamentscore">
+            <span id="phase"></span>
+            <div id="score">
+                <div id="score1" class="score"></div>
+                <div id="score2" class="score"></div>
+                <div class="score" style="width: 100%; text-align: center;">-</div>
+            </div>
+        </div>
+    </div>
+    <!-- Oben links -->
+    <div class="stattable lefttable toptable" id="table1">
+        <div class="title">Punish Game</div>
+        <div class="content">
+            <div class="content-left" id="opk1"></div>
+            <div class="content-center">Openings<br>per Kill</div>
+            <div class="content-right" id="opk2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="dpo1"></div>
+            <div class="content-center">Damage<br>per Openings</div>
+            <div class="content-right" id="dpo2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="csr1"></div>
+            <div class="content-center">Conversion<br>Success Rate</div>
+            <div class="content-right" id="csr2"></div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-left" id="mukm1"></div>
+            <div class="content-center">most used<br>Kill Move</div>
+            <div class="content-right" id="mukm2"></div>
+        </div>
+    </div>
+    <!-- Unten links -->
+    <div class="stattable lefttable bottomtable" id="table2">
+        <div class="title">Defense Game</div>
+        <div class="content">
+            <div class="content-left" id="gtr1"></div>
+            <div class="content-center">Ground Tech<br>Ratio</div>
+            <div class="content-right" id="gtr2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="wtr1"></div>
+            <div class="content-center">Wall Tech<br>Ratio</div>
+            <div class="content-right" id="wtr2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="chr1"></div>
+            <div class="content-center">Counter Hit<br>Ratio</div>
+            <div class="content-right" id="chr2"></div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-left" id="ld1"></div>
+            <div class="content-center">latest<br>Death</div>
+            <div class="content-right" id="ld2"></div>
+        </div>
+    </div>
+    <!-- Oben rechts -->
+    <div class="stattable righttable toptable" id="table3">
+        <div class="title">Neutral Game</div>
+        <div class="content">
+            <div class="content-left" id="muns1"></div>
+            <div class="content-center">most used<br>Neutral Starter</div>
+            <div class="content-right" id="muns2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="nwr1"></div>
+            <div class="content-center">Neutral Win<br>Ratio</div>
+            <div class="content-right" id="nwr2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="ddpg1"></div>
+            <div class="content-center">Dashdance<br>per Game</div>
+            <div class="content-right" id="ddpg2"></div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-left" id="lgpg1"></div>
+            <div class="content-center">Ledgegrabs<br>per Game</div>
+            <div class="content-right" id="lgpg2"></div>
+        </div>
+    </div>
+    <!-- Unten rechts -->
+    <div class="stattable righttable bottomtable" id="table4">
+        <div class="title">Miscellaneous</div>
+        <div class="content">
+            <div class="content-left" id="ek1"></div>
+            <div class="content-center">Earliest<br>Kill</div>
+            <div class="content-right" id="ek2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="ak1"></div>
+            <div class="content-center">Average<br>Kill</div>
+            <div class="content-right" id="ak2"></div>
+        </div>
+        <div class="content">
+            <div class="content-left" id="ipm1"></div>
+            <div class="content-center">dig. Inputs<br>per Minute</div>
+            <div class="content-right" id="ipm2"></div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-left" id="tddpg1"></div>
+            <div class="content-center">total Damage<br>done per Game</div>
+            <div class="content-right" id="tddpg2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

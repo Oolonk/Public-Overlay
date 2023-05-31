@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="scripts/bottombar.js"></script>
+  <script src="assets/script/jquery.js"></script>
+  <script src="assets/script/jquery-ui.js"></script>
+  <script type="text/javascript" src="assets/script/jquery.mbBrowser.min.js"></script>
+  <script src="assets/script/jquery.cssAnimate.js"></script>
+  <link rel="stylesheet" href="styles/bottombar.css">
+  <title></title>
+</head>
+
+<body onload="display_ct();">
+  <div id="bottombar" class="">
+
+    <div id="commentatorbar">
+      <div class="contentleft contentlocation">
+        <div class="titleleft">Location:</div>
+        <div class="valueleft location"></div>
+      </div>
+      <div class="contentright">
+        <div class="titleright">Local Time:</div>
+        <div class="timer valueright"></div>
+      </div>
+      <div class="contentcenter">
+        <div class="titlecenter">Commentators:</div>
+        <div id="commentators" class="valuecenter"></div>
+      </div>
+    </div>
+
+
+    <div id="owntextbar">
+      <div class="contentleft contentlocation">
+        <div class="titleleft">Location:</div>
+        <div class="valueleft location"></div>
+      </div>
+      <div class="contentright">
+        <div class="titleright">Local Time:</div>
+        <div class="timer valueright"></div>
+      </div>
+      <div class="contentcenter">
+        <div id="owntext" class="valuecenter" style="padding-left: 120px; padding-right: 120px; white-space: normal;">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

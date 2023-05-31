@@ -1,0 +1,56 @@
+html {
+    font-family: BerlinType-Bold;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: BerlinType-Regular;
+    src: url(../assets/script/Noto_Sans/NotoSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BerlinType-Bold;
+    src: url(../assets/script/Noto_Sans/NotoSans-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BerlinTypeOffice-Regular;
+    src: url(../assets/script/Noto_Sans_Mono/NotoSansMono-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BerlinTypeOffice-Bold;
+    src: url(../assets/script/Noto_Sans_Mono/NotoSansMono-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --p1: 231, 59, 45;
+    --p2: 47, 111, 221;
+    --p3: 241, 169, 22;
+    --p4: 41, 170, 83;
+    --cpu: 93, 96, 103;
+    /*dark blue*/
+    --primarycolor: 11, 97, 171;
+    /*light blue*/
+    --tertiarycolor: 60, 127, 186;
+    /* dark red */
+    --secondarycolor: 146, 45, 68;
+    /* light red */
+    --quaternarycolor: 210, 67, 80;
+}

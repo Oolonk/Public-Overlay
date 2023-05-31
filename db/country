@@ -1,0 +1,255 @@
+{"name":"Tajikistan","nation":"","continent":"Asia","_id":"02L07ekpanIP804t"}
+{"name":"Serbia","nation":"","continent":"Europe","_id":"0Ek7DibA0YVj2h2m"}
+{"continent":"Europe","name":"Portugal","nation":"","_id":"0JOzMnrFfuCDL39m"}
+{"name":"Kenya","nation":"","continent":"Africa","_id":"0XWA2vlY8j8SJyuy"}
+{"continent":"Europe","name":"Poland","nation":"","_id":"0i70EAzXTaExcwIg"}
+{"name":"Marshall Islands","nation":"","continent":"Oceania","_id":"1KOMNCYnPVW4S04v"}
+{"name":"Angola","nation":"","continent":"Africa","_id":"1bhnFWDQXQhZ50cU"}
+{"name":"Svalbard and Jan Mayen","nation":"","continent":"Europe","_id":"1cMy5OjnWuNNYdZz"}
+{"name":"Sudan","nation":"","continent":"Africa","_id":"2Amt2lzICfE2mNmI"}
+{"name":"Trinidad and Tobago","nation":"","continent":"North America","_id":"2DHu6v5alEkJqoQo"}
+{"name":"Dominica","nation":"","continent":"North America","_id":"2Jiw8sRxDBEqexkY"}
+{"name":"South Korea","continent":"Asia","nation":"","_id":"2eglBcvFrEkqbtNZ"}
+{"name":"Turkey","nation":"","continent":"Asia","_id":"2qZyLAmYBOuSbjSg"}
+{"continent":"Europe","name":"Luxembourg","nation":"","_id":"3Rnz7a4h12ec1f0e"}
+{"name":"Malaysia","nation":"","continent":"Asia","_id":"3ShSfFivEkylcCIn"}
+{"name":"United Arab Emirates","nation":"","continent":"Asia","_id":"4OlyIiCQKo3cPUOo"}
+{"name":"Belize","nation":"","continent":"North America","_id":"4asI29UmuXShd1nq"}
+{"name":"Antigua and Barbuda","nation":"","continent":"North America","_id":"59S5OFMlCPAa2aFx"}
+{"name":"Argentina","nation":"","continent":"South America","_id":"5x2xRyp4BZHHFAgT"}
+{"name":"Liechtenstein","nation":"","continent":"Europe","_id":"67YYwtLCxt6voG60"}
+{"name":"Åland Islands","nation":"","continent":"Europe","_id":"68I0B3WHWj5CLzfv"}
+{"name":"Seychelles","nation":"","continent":"Africa","_id":"6BkYpfj2Fqwg6PVw"}
+{"name":"Somalia","nation":"","continent":"Africa","_id":"6mwrUUhnDvP2h8jd"}
+{"name":"Lithuania","continent":"Europe","nation":"","_id":"6t3AFN4OAjgW8vey"}
+{"name":"Cayman Islands","nation":"","continent":"North America","_id":"6vbpAbaaWmMeZ9jX"}
+{"name":"Romania","nation":"","continent":"Europe","_id":"72cXpYQFv9Xyk3hb"}
+{"name":"Moldova","nation":"","continent":"Europe","_id":"7Jk8nI7aJPedifsP"}
+{"name":"Scotland","continent":"Europe","nation":"ummjc8B3oAWRn7eH","_id":"7TkhZZxuY5az8EGL"}
+{"name":"Hong Kong","nation":"","continent":"Asia","_id":"7WS4lxLLWRrCakzY"}
+{"continent":"North America","name":"US","nation":"","_id":"7XUThwvMsT7i5Z2z"}
+{"continent":"Europe","name":"Sweden","nation":"","_id":"7YgeKqpO9itNZBlV"}
+{"name":"Bouvet Island","nation":"","continent":"Antarctica","_id":"8C5n71mDdq3MQyF9"}
+{"continent":"Europe","name":"Iceland","nation":"","_id":"8OEOCHj9HCtfYvIs"}
+{"name":"South Georgia","nation":"","continent":"Antarctica","_id":"8RYrzvePQFX65FPs"}
+{"name":"Rwanda","nation":"","continent":"Africa","_id":"9AS8TCcbA34CZYLi"}
+{"name":"Heard Island and McDonald Islands","nation":"","continent":"Antarctica","_id":"9BUUynIlCSoY3fqZ"}
+{"name":"New Zealand","nation":"","continent":"Oceania","_id":"9HTn5PjoEBi4jnuu"}
+{"name":"Gibraltar","nation":"","continent":"Europe","_id":"9Tjgvr1NciU5IE0w"}
+{"continent":"Europe","name":"Netherlands","nation":"","_id":"9ZLBURH5uifraX1u"}
+{"continent":"Europe","name":"Norway","nation":"","_id":"9vAjgENObtcTkp1k"}
+{"name":"Australia","continent":"Oceania","nation":"","_id":"9zGzRQFfgXNQblau"}
+{"name":"Kosovo","nation":"","continent":"Europe","_id":"AQNz1g9ZVarzQD6P"}
+{"name":"Pakistan","nation":"","continent":"Asia","_id":"ASXBsPy1EsX5L0k8"}
+{"name":"Aruba","nation":"","continent":"North America","_id":"Aj9DDB7X9My5Ia50"}
+{"name":"Dominican Republic","nation":"","continent":"North America","_id":"AlGZeKM29rC3cPVG"}
+{"name":"Chad","nation":"","continent":"Africa","_id":"B2SdTTWu58k4e3PI"}
+{"name":"Mozambique","nation":"","continent":"Africa","_id":"B9SIo8gHZL4L11tG"}
+{"name":"Comoros","nation":"","continent":"Africa","_id":"BNyH9yPyrYoUkqMf"}
+{"name":"Nicaragua","nation":"","continent":"North America","_id":"BQjJcFvSbddzQLTe"}
+{"name":"Jordan","nation":"","continent":"Asia","_id":"BeCkAtHE0yH4CHKa"}
+{"name":"Tanzania","nation":"","continent":"Africa","_id":"BzYHPZhMtLh06nOZ"}
+{"name":"Malawi","nation":"","continent":"Africa","_id":"CHIk1f5blzIVwRC2"}
+{"name":"Myanmar","nation":"","continent":"Asia","_id":"DMCY3aRb20mce3QH"}
+{"name":"Maldives","nation":"","continent":"Asia","_id":"DTLHQqpRdaiwgZjn"}
+{"name":"Republic of the Congo","nation":"","continent":"Africa","_id":"Dkk9bvpNU3KuTsvZ"}
+{"name":"Guinea","nation":"","continent":"Africa","_id":"DokEQqDfWql12hJM"}
+{"name":"North Korea","nation":"","continent":"Asia","_id":"DrYQ7WUm8qhmQ6J7"}
+{"name":"Guadeloupe","nation":"","continent":"North America","_id":"DuVXLBcVDS14lFbF"}
+{"name":"Jamaica","nation":"","continent":"North America","_id":"EBvbhgkOmhIrKAHB"}
+{"name":"Afghanistan","nation":"","continent":"Asia","_id":"EpvUI18frYiVvaWQ"}
+{"name":"Lesotho","nation":"","continent":"Africa","_id":"F2nVh1lPcs9vv2qU"}
+{"name":"Cambodia","nation":"","continent":"Asia","_id":"FBbEMlkVTqqzJ1KG"}
+{"continent":"Europe","name":"Spain","nation":"","_id":"FP3ZR5LGbnWTk7aJ"}
+{"name":"Ghana","nation":"","continent":"Africa","_id":"FTHijaEflyhqk5wP"}
+{"continent":"Asia","name":"Japan","nation":"","_id":"FXXEHmycqUTcNazL"}
+{"name":"Nauru","nation":"","continent":"Oceania","_id":"G9SNSWnOjNWv3Lpa"}
+{"continent":"Europe","name":"England","nation":"ummjc8B3oAWRn7eH","_id":"HEmxg0zsQyUtJBYW"}
+{"name":"Croatia","nation":"","continent":"Europe","_id":"HerD7LSXk6MhM5mK"}
+{"name":"Bhutan","nation":"","continent":"Asia","_id":"HgCUV9GRnSBhx48d"}
+{"name":"Norfolk Island","nation":"","continent":"Oceania","_id":"HzPvIDJLLwCgfkYq"}
+{"name":"Oman","nation":"","continent":"Asia","_id":"I4SVH2APYAgRxLqc"}
+{"name":"São Tomé and Príncipe","nation":"","continent":"Africa","_id":"IKOOsdBaIU7HCmgO"}
+{"name":"Uzbekistan","nation":"","continent":"Asian","_id":"IRhYOZ5QmbyoggKP"}
+{"name":"United States Minor Outlying Islands","nation":"","continent":"Oceania","_id":"IVBREftgeL3GWely"}
+{"name":"Wales","continent":"Europe","nation":"ummjc8B3oAWRn7eH","_id":"IZRQBhfLXekIYnSI"}
+{"name":"Israel","nation":"","continent":"Asia","_id":"IeGYvPasKpSoH4qx"}
+{"name":"Cocos (Keeling) Islands","nation":"","continent":"Asia","_id":"IvPYF3vJGmkWrqBT"}
+{"name":"Mauritius","nation":"","continent":"Africa","_id":"J2FTjn81y92diVTk"}
+{"name":"Tonga","nation":"","continent":"Oceania","_id":"JCYWxd98I2eBvWIW"}
+{"name":"Christmas Island","nation":"","continent":"Asia","_id":"JFPfVGXFKKoF51Bi"}
+{"name":"Wallis and Futuna","nation":"","continent":"Oceania","_id":"JbPc7lwAd71Tf8jD"}
+{"name":"Iraq","nation":"","continent":"Asia","_id":"KAaaxQjD8uYbC8W7"}
+{"name":"Guinea-Bissau","nation":"","continent":"Africa","_id":"KIXXXklhdsqvRtIy"}
+{"name":"Azerbaijan","nation":"","continent":"Asia","_id":"KJOEI0ACj1fRFbu9"}
+{"name":"Bosnia and Herzegovina","nation":"","continent":"Europe","_id":"KcH4GaDMYaxKlbf4"}
+{"name":"Singapore","nation":"","continent":"Asia","_id":"KiFY8mY6kqxjXQeN"}
+{"name":"Latvia","nation":"","continent":"Europe","_id":"Lx8gzfYPsPDAgwDw"}
+{"name":"Isle of Man","nation":"","continent":"Europe","_id":"LzeZZwQNbNSY9dRQ"}
+{"name":"Nigeria","nation":"","continent":"Africa","_id":"MKpD76u8D2Su73dn"}
+{"name":"India","continent":"Asia","nation":"","_id":"MauCaXDeTAa1HEJ3"}
+{"name":"Zambia","nation":"","continent":"Africa","_id":"MfzrXcwvHZG5sMYH"}
+{"name":"Eritrea","nation":"","continent":"Africa","_id":"Mo0IRDTYFZJajD33"}
+{"name":"Guernsey","nation":"","continent":"Europe","_id":"Mswk9a0gYdu8WqqD"}
+{"name":"Iran","nation":"","continent":"Asia","_id":"N0nO81C8VozJTU6j"}
+{"name":"Qatar","nation":"","continent":"Asia","_id":"NH3GqjgKFNoHPNsZ"}
+{"name":"Estonia","nation":"","continent":"Europe","_id":"NcQA9Ibk6tQzj5yc"}
+{"name":"Faroe Islands","nation":"","continent":"Europe","_id":"NjhR3bZdTWO49WJ4"}
+{"name":"United States Virgin Islands","nation":"","continent":"North America","_id":"NmMjdVP4eU9x7T9J"}
+{"name":"Madagascar","nation":"","continent":"Africa","_id":"OKyWuN4jYNqCQdmy"}
+{"name":"Slovakia","nation":"","continent":"Europe","_id":"OMfu4soiJmjdRrq8"}
+{"name":"Martinique","nation":"","continent":"North America","_id":"Ohjjlus0KIPoT9wH"}
+{"name":"Guatemala","nation":"","continent":"North America","_id":"OnQuuExY9ua1rEqQ"}
+{"name":"Paraguay","nation":"","continent":"South America","_id":"OoFkS5Du2Fvu9WOE"}
+{"name":"Tunisia","nation":"","continent":"Africa","_id":"P9F7W53TU68O7e8U"}
+{"name":"Costa Rica","nation":"","continent":"North America","_id":"Pa8dWTl6GGqoDdjS"}
+{"name":"Botswana","nation":"","continent":"Africa","_id":"PdRSxBg0FpxRavAE"}
+{"name":"Northern Mariana Islands","nation":"","continent":"Oceania","_id":"Q7kHkbbP6vaGHuEl"}
+{"name":"Ukraine","nation":"","continent":"Europe","_id":"QMUoGESWY9YETEkG"}
+{"name":"Lebanon","nation":"","continent":"Asia","_id":"QjpgrN3WeOnPZlvg"}
+{"name":"Bangladesh","nation":"","continent":"Asia","_id":"R342KVL7NO0qs2n0"}
+{"name":"Malta","continent":"Europe","nation":"","_id":"RKXLifF3fWARTpYu"}
+{"name":"Grenada","nation":"","continent":"North America","_id":"RWFQgH2lyd1NvUCc"}
+{"name":"Albania","nation":"","continent":"Europe","_id":"SAFlSk8JSV32xkbW"}
+{"name":"Czech Republic","nation":"","continent":"Europe","_id":"SD7pgQpCq4JKS6Dr"}
+{"name":"Guam","nation":"","continent":"Oceania","_id":"SPpIWxco3ZowEAUz"}
+{"name":"Bolivia","nation":"","continent":"South America","_id":"SRA3tkkUgTWvU2jM"}
+{"name":"Western Sahara","nation":"","continent":"Africa","_id":"SRSFm18Zp4mIvI8D"}
+{"name":"French Polynesia","nation":"","continent":"Oceania","_id":"Spi3TxUyRTtsIJoF"}
+{"name":"Saint Pierre and Miquelon","nation":"","continent":"North America","_id":"SyYfqMpLjMBucVph"}
+{"name":"Bulgaria","nation":"","continent":"Europe","_id":"T5J5aww6QjIJDvNK"}
+{"name":"Ecuador","nation":"","continent":"South America","_id":"THve0aRamAb64GkQ"}
+{"name":"DR Congo","nation":"","continent":"Africa","_id":"TVVi7W1PLHB8eFeE"}
+{"name":"Mongolia","nation":"","continent":"Asia","_id":"Tc9glVebbJAlCvhX"}
+{"name":"Anguilla","nation":"","continent":"North America","_id":"TecXgu60ENArhvjZ"}
+{"name":"Sri Lanka","nation":"","continent":"Asia","_id":"TxVwkv6OhPWd3MMi"}
+{"name":"Thailand","nation":"","continent":"Asia","_id":"TxsFlIWKFxzhY3Vr"}
+{"name":"Palestine","nation":"","continent":"Asia","_id":"U7WYLb6G1K7hHMc3"}
+{"name":"Sint Maarten","nation":"","continent":"North America","_id":"UlGmNZrvPglenltY"}
+{"name":"Samoa","nation":"","continent":"Oceania","_id":"V1EDxJEsLRFsJrCb"}
+{"name":"Bonaire","nation":"","continent":"North America","_id":"VmQwZt8pZxtJNOmN"}
+{"name":"Greece","continent":"Europe","nation":"","_id":"W5P5RgiKzk8N7y5g"}
+{"name":"Saint Vincent and the Grenadines","nation":"","continent":"North America","_id":"WQiQUABz8EzqP3Su"}
+{"name":"Turks and Caicos Islands","nation":"","continent":"North America","_id":"WZbRfiv98E6NRPEp"}
+{"name":"South Africa","nation":"","continent":"Africa","_id":"WuNLHVHuTiDmYzJy"}
+{"name":"Macedonia","nation":"","continent":"Europe","_id":"X4B6wq7JqwuRGxV0"}
+{"name":"Libya","nation":"","continent":"Africa","_id":"X4U7yenl1Y5pJTQP"}
+{"name":"Kazakhstan","nation":"","continent":"Asia","_id":"XLoo1uq4kwoWsebb"}
+{"name":"Brunei","nation":"","continent":"Asia","_id":"XezRq9ec7rlwewBd"}
+{"name":"Vietnam","nation":"","continent":"Asia","_id":"XrTVyVAfHnIF4TSD"}
+{"name":"Syria","nation":"","continent":"Asia","_id":"XtAVOS13xSZ0Yd37"}
+{"name":"Georgia","nation":"","continent":"Asia","_id":"YBTHhkWZ2cFlLwBE"}
+{"name":"Saint Lucia","nation":"","continent":"North America","_id":"YVx5WbM9WLPAyHS9"}
+{"name":"Montenegro","nation":"","continent":"Europe","_id":"Yn8fp7wdpvR9hlfO"}
+{"name":"Togo","nation":"","continent":"Africa","_id":"Ywt1fruyZ2xbpTS8"}
+{"name":"British Virgin Islands","nation":"","continent":"North America","_id":"Yz70MzXXPA1dlBHO"}
+{"continent":"Europe","name":"Ireland","nation":"","_id":"ZAT0sUVSE3sCufM0"}
+{"name":"Monaco","nation":"","continent":"Europe","_id":"ZLxyQv2WyOwPjd0f"}
+{"continent":"Europe","name":"Belgium","nation":"","_id":"ZXMKBmp2ZBYdPwzW"}
+{"continent":"Europe","name":"France","nation":"","_id":"Zt8S4XkLZilW0Hwj"}
+{"name":"Russia","continent":"Europe","nation":"","_id":"Zxpy1RIow7o0zX09"}
+{"name":"Tokelau","nation":"","continent":"Oceania","_id":"a6cUFZJbChFsJkyE"}
+{"name":"Indonesia","nation":"","continent":"Asia","_id":"aETJ1QrzlAOphloM"}
+{"name":"Niue","nation":"","continent":"Oceania","_id":"aSDwKMUIzJLiwTPk"}
+{"name":"Yemen","nation":"","continent":"Asia","_id":"aTKB0h7bBRbfpQ7h"}
+{"name":"El Salvador","nation":"","continent":"North America","_id":"aauXKdvNYSyxbeFp"}
+{"name":"Saint Martin","nation":"","continent":"North America","_id":"aeqs538CbnN1S96D"}
+{"name":"Senegal","nation":"","continent":"Africa","_id":"bPUkfxFdrdoj317K"}
+{"continent":"North America","name":"Canada","nation":"","_id":"bhbCxgrmqU60T3kj"}
+{"name":"Jersey","nation":"","continent":"Europe","_id":"bj5bTfLIs4hXijuF"}
+{"name":"Mauritania","nation":"","continent":"Africa","_id":"brKWhKWqyZcgEhey"}
+{"name":"Suriname","nation":"","continent":"South America","_id":"bzaXNu8GXL0IPbMl"}
+{"name":"Chile","continent":"South America","nation":"","_id":"cIb0AX3cwDaMeeHd"}
+{"name":"Uruguay","nation":"","continent":"South America","_id":"cnDNYL9lr56FKX9q"}
+{"name":"Vanuatu","nation":"","continent":"Oceania","_id":"d5hfMKNdDmRwzVql"}
+{"name":"Cuba","nation":"","continent":"North America","_id":"dTdBu6fxpsq3ISj8"}
+{"name":"Hungary","nation":"","continent":"Europe","_id":"dUlXJ0PKFuWcwvk6"}
+{"name":"Uganda","nation":"","continent":"Africa","_id":"dePkLLtyKE3Sqw74"}
+{"name":"Benin","nation":"","continent":"Africa","_id":"dnfkG3ekQtjWfIsN"}
+{"name":"Vatican City","nation":"","continent":"Europe","_id":"ecjcskDHHP9daB7T"}
+{"name":"Morocco","nation":"","continent":"Africa","_id":"fK2h0RdwxzedITBo"}
+{"name":"Swaziland","nation":"","continent":"Africa","_id":"fKeX3CNjc9K3t9zT"}
+{"name":"Andorra","nation":"","continent":"Europe","_id":"fTtYgydZeg6csvAy"}
+{"name":"Sierra Leone","nation":"","continent":"Africa","_id":"fUji3Z6WDEZm0P4m"}
+{"name":"Kuwait","nation":"","continent":"Asia","_id":"fVQVwke51D5pr728"}
+{"name":"Liberia","nation":"","continent":"Africa","_id":"fhLAgQD3UAt3MR5W"}
+{"name":"Nepal","nation":"","continent":"Asia","_id":"fpq7SnhSoN7iKVAw"}
+{"name":"Venezuela","nation":"","continent":"South America","_id":"gC4CY2Wp4S74pY5t"}
+{"continent":"South America","name":"Peru","nation":"","_id":"gFmwyTI601drMxxV"}
+{"name":"Namibia","nation":"","continent":"Africa","_id":"gbU4oHvYm41HA4Wp"}
+{"name":"Armenia","nation":"","continent":"Asia","_id":"h6FF209qDCxYhOCs"}
+{"name":"Gabon","nation":"","continent":"Africa","_id":"hMDwhzGqsA9SP9IU"}
+{"name":"American Samoa","nation":"","continent":"Oceania","_id":"hTAQB8UkvR7oHxYc"}
+{"name":"Cook Islands","nation":"","continent":"Oceania","_id":"i6mj4Xm8cszNNl8W"}
+{"name":"Cyprus","nation":"","continent":"Europe","_id":"iPoqG7jPwIOEeLxJ"}
+{"name":"Bermuda","nation":"","continent":"North America","_id":"iZeSVaOZi2TAvndQ"}
+{"name":"Turkmenistan","nation":"","continent":"Asia","_id":"jKItq1X75UkcLOtT"}
+{"name":"Kiribati","nation":"","continent":"Oceania","_id":"jXo7nR1PT4blPkF1"}
+{"name":"Honduras","nation":"","continent":"North America","_id":"jjISD2zrMM9eJrnz"}
+{"name":"Burundi","nation":"","continent":"Africa","_id":"jqxv72ZE1eGzihIS"}
+{"name":"South Sudan","nation":"","continent":"Africa","_id":"jrT4CFRQcJJlG6v6"}
+{"name":"Macau","nation":"","continent":"Asia","_id":"k7A0OinwreknKXUN"}
+{"name":"French Guiana","nation":"","continent":"South America","_id":"kB6etvIw7X0daG0J"}
+{"name":"Pitcairn Islands","nation":"","continent":"Oceania","_id":"kTWGrM7AP1AQwaYV"}
+{"name":"Timor-Leste","nation":"","continent":"Oceania","_id":"kaTSixZArn8lvxgE"}
+{"name":"Antarctica","nation":"","continent":"Antarctica","_id":"kdGZ0DEuP6wqed4a"}
+{"name":"Falkland Islands","nation":"","continent":"South America","_id":"keWWybFDdGQpDE1K"}
+{"name":"China","nation":"","continent":"Asia","_id":"l8PscYqkaZBMyBIg"}
+{"name":"Ethiopia","nation":"","continent":"Africa","_id":"liijldqaxHTN3uJx"}
+{"continent":"Europe","name":"Austria","nation":"","_id":"lmmZbjDbi8XMHQtT"}
+{"name":"Gambia","nation":"","continent":"Africa","_id":"ltWBlGAeeo3DMheo"}
+{"name":"Taiwan","nation":"","continent":"Asia","_id":"m7DqhE8wcFO8uot6"}
+{"name":"Haiti","nation":"","continent":"North America","_id":"mIBgssUdMbetAepj"}
+{"continent":"North America","name":"United States","nation":"","_id":"mOqTzHX7LviRKsgh"}
+{"name":"Saint Helena, Ascension and Tristan da Cunha","nation":"","continent":"Africa","_id":"majbaRtV3otydnbe"}
+{"name":"San Marino","nation":"","continent":"Europe","_id":"nAeMQHaHOPMV3n6O"}
+{"name":"Colombia","continent":"South America","nation":"","_id":"nS0Bhjdb2SpXFbWv"}
+{"continent":"Europe","name":"Denmark","nation":"","_id":"nShbxSltWScxwQDa"}
+{"name":"Curaçao","nation":"","continent":"North America","_id":"njVwNeO0ohXmZwyx"}
+{"name":"Zimbabwe","nation":"","continent":"Africa","_id":"npXPGUhrcieaIoit"}
+{"name":"New Caledonia","nation":"","continent":"Oceania","_id":"o7FeRz9kbMQfLRNI"}
+{"name":"French Southern and Antarctic Lands","nation":"","continent":"Antarctica","_id":"ornf2hBjQDf4YNYI"}
+{"name":"Cameroon","nation":"","continent":"Africa","_id":"p021AWtSpkx4F5OJ"}
+{"name":"Barbados","nation":"","continent":"North America","_id":"pPNXbp8cAIzejwKK"}
+{"name":"Laos","nation":"","continent":"Asia","_id":"pYztGUBxI3V0hBzM"}
+{"name":"Central African Republic","nation":"","continent":"Africa","_id":"psO8Zc75BINSM5JV"}
+{"name":"Kyrgyzstan","nation":"","continent":"Asia","_id":"qlopQYNCPJgTatIF"}
+{"continent":"Europe","name":"Finland","nation":"","_id":"qqKWQGsEi3szrKIj"}
+{"name":"Mayotte","nation":"","continent":"Africa","_id":"r026sxc7euVfK9N8"}
+{"name":"Puerto Rico","nation":"","continent":"North America","_id":"r7OIIDgQZfg6uVTA"}
+{"continent":"North America","name":"Mexico","nation":"","_id":"rr8A3c9hXQBWTRzR"}
+{"name":"Cape Verde","nation":"","continent":"Africa","_id":"s6y1I4SNhlWVXWRk"}
+{"name":"Burkina Faso","nation":"","continent":"Africa","_id":"sm8slYI0VG36XIQC"}
+{"name":"Slovenia","nation":"","continent":"Europe","_id":"std5pvC9cOOPvtBi"}
+{"name":"Equatorial Guinea","nation":"","continent":"Africa","_id":"t1POJJdNdsmpWRTP"}
+{"continent":"North America","name":"United States of America","nation":"","_id":"t6qK0I9zrQZePUus"}
+{"continent":"Europe","name":"Switzerland","nation":"","_id":"tG5DN57p034hCh1l"}
+{"name":"Montserrat","nation":"","continent":"North America","_id":"tV8hNgvamJFfRn8r"}
+{"name":"Belarus","nation":"","continent":"Europe","_id":"uky5fh6zez7fu2DV"}
+{"continent":"Europe","name":"United Kingdom","nation":"","_id":"ummjc8B3oAWRn7eH"}
+{"name":"Greenland","nation":"","continent":"North America","_id":"uwGoi6kkOP0lWiSa"}
+{"name":"Egypt","nation":"","continent":"Africa","_id":"v6Ho2Q6ePU9vZppl"}
+{"name":"Saint Barthélemy","nation":"","continent":"North America","_id":"vBFGGP2s7mE75PYP"}
+{"name":"Philippines","nation":"","continent":"Asia","_id":"vU4ZgEh2Ps9GeK40"}
+{"name":"Ivory Coast","nation":"","continent":"Africa","_id":"vv05oNWzyWyxcb2K"}
+{"continent":"Europe","name":"Italy","nation":"","_id":"w7aEP6mjcuwdEDkb"}
+{"name":"Brazil","nation":"","continent":"South America","_id":"wTOFJPRvCrnMVwfv"}
+{"name":"Tuvalu","nation":"","continent":"Oceania","_id":"wdeZx4vjZqJnSYT1"}
+{"name":"Djibouti","nation":"","continent":"Africa","_id":"weROTKhGoPDm895M"}
+{"name":"Mali","nation":"","continent":"Africa","_id":"wnAFmpaJx12hP4vL"}
+{"name":"Bahamas","nation":"","continent":"North America","_id":"woAsbDJ1P1lKvlzD"}
+{"continent":"Europe","name":"Germany","nation":"","_id":"wvKcVbVeCJRw7shL"}
+{"name":"Guyana","nation":"","continent":"South America","_id":"xTS7TGz24b3m5bmd"}
+{"name":"Micronesia","nation":"","continent":"Oceania","_id":"xWADxxxwIJC4bdgJ"}
+{"name":"Réunion","nation":"","continent":"Africa","_id":"xZKUCi3pwQNeJOjZ"}
+{"name":"Bahrain","nation":"","continent":"Asia","_id":"yDYweX0ifcqGT4Hy"}
+{"name":"Fiji","nation":"","continent":"Oceania","_id":"yOGksVYJrttx12EI"}
+{"name":"Niger","nation":"","continent":"Africa","_id":"yPAYAyPEzdfqchND"}
+{"name":"British Indian Ocean Territory","nation":"","continent":"Asia","_id":"ysUeYzMMyTyfBfzn"}
+{"name":"Palau","nation":"","continent":"Oceania","_id":"z51TjkJyP0iNqngc"}
+{"name":"Solomon Islands","nation":"","continent":"Oceania","_id":"zB0HUbEFoaeYqXdk"}
+{"name":"Algeria","nation":"","continent":"Africa","_id":"zIjwqXbKtwwHsu4R"}
+{"name":"Saudi Arabia","nation":"","continent":"Asia","_id":"zYeohuSw3OnF8Oor"}
+{"name":"Panama","nation":"","continent":"North America","_id":"zkOyXu1Z7B8hWChE"}
+{"name":"Saint Kitts and Nevis","nation":"","continent":"North America","_id":"zoLpv587iLuReZai"}
+{"name":"Papua New Guinea","nation":"","continent":"Oceania","_id":"zohhSXfbf7UbELnI"}
