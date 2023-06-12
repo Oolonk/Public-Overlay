@@ -171,8 +171,8 @@ piio.on("ready", () => {
             jQuery("#playercolor" + y).css({ 'background-color': "rgb(var(--p3))" });
             jQuery(".char" + y).css({ 'color': "rgb(var(--p3))" });
           } else {
-            jQuery("#playercolor" + y).css({ 'background-color': "rgb(var(--cpu))" });
-            jQuery(".char" + y).css({ 'color': "rgb(var(--cpu))" });
+            jQuery("#playercolor" + y).css({ 'background-color': "rgb(var(--p4))" });
+            jQuery(".char" + y).css({ 'color': "rgb(var(--p4))" });
           }
         }
         //jQuery("#playercolor" + y).css({'width':slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.shieldSize*(55/12)});
