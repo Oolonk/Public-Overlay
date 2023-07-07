@@ -1,31 +1,36 @@
 @import "theme.css";
 
+
+body {
+  margin: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
 .top {
-  width: 366px;
-  height: 40px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: hidden;
-  padding-left: 7px;
-  padding-right: 7px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
+  width: 295px;
+  height: 41px;
+  line-height: 50px;
   background-color: rgb(var(--primarycolor));
-  opacity: 0;
+  position: absolute;
 }
 
 .bottom {
-  width: 366px;
-  height: 30px;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  overflow: hidden;
-  padding-left: 7px;
-  padding-right: 7px;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 295px;
+  height: 41px;
   background-color: rgb(var(--secondarycolor));
-  opacity: 0;
+  position: absolute;
+}
+
+.commentatortop .bottom {
+  top: 43px;
+
+}
+
+.commentatorbottom .bottom {
+  bottom: 0px;
 
 }
 
@@ -54,20 +59,18 @@
   color: #bfbfbf;
 }
 
-#playertext2 {
-  right: 42px;
-  text-align: right;
-  position: absolute;
-  line-height: 42px;
-}
-
-#playertext1 {
+.playertext {
   left: 42px;
+  top: 0px;
   position: absolute;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
   line-height: 42px;
 }
 
 .flag {
+  left: 6px;
   background-size: contain;
   position: absolute;
   width: 25px;
@@ -75,46 +78,65 @@
   top: 8px;
 }
 
-#c1flag {
-  left: 6px;
-}
-
-#c2flag {
-  right: 6px;
-}
-
-#c1teamicon {
-  right: 6px;
-}
-
-#c2teamicon {
-  left: 6px;
-}
-
 .twittericon {
-  background-size: contain;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 5px;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  left: 6px;
 }
 
-#lefttwittericon {
-  left: 5px;
-}
-
-#c1twitter {
-  left: 30px;
+.twittertext {
+  left: 42px;
+  top: 0px;
   position: absolute;
-  line-height: 27px;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
+  line-height: 42px;
 }
 
 #righttwittericon {
   right: 5px;
 }
 
-#c2twitter {
-  right: 30px;
-  line-height: 27px;
+#teamicon {
+  right: 6px;
+}
+
+#commentatordiv {
+  bottom: 158px;
   position: absolute;
+  width: calc(100% - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.commentator {
+  width: 295px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.commentatortop>.centerlize {
+  margin-top: 0px;
+}
+
+.commentatorbottom>.centerlize {
+  margin-bottom: 0px;
+}
+
+.centerlize {
+  margin: auto;
+  width: inherit;
+  display: block;
+  height: 84px;
+  width: 0px;
+  flex: 0 0 0;
+  transform: translateX(-147.5px);
 }
