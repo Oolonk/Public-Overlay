@@ -45,12 +45,12 @@ html {
     --p3: 241, 169, 22;
     --p4: 41, 170, 83;
     --cpu: 93, 96, 103;
-    /*dark blue*/
+    /*dark blue CODE: RRR, GGG, BBB (0-255)*/
     --primarycolor: 11, 97, 171;
-    /*light blue*/
+    /*light blue CODE: RRR, GGG, BBB (0-255)*/
     --tertiarycolor: 60, 127, 186;
-    /* dark red */
+    /* dark red CODE: RRR, GGG, BBB (0-255)*/
     --secondarycolor: 146, 45, 68;
-    /* light red */
+    /* light red  CODE: RRR, GGG, BBB (0-255)*/
     --quaternarycolor: 210, 67, 80;
 }
