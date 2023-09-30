@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/top8.js"></script>
+    <script src="assets/script/jquery.js"></script>
+    <script src="assets/script/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/script/jquery.mbBrowser.min.js"></script>
+    <script src="assets/script/jquery.cssAnimate.js"></script>
+    <link rel="stylesheet" href="styles/top8.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- Metadata -->
+    <div id="tournamentnamediv">
+        <span id="tournamentname"></span>
+    </div>
+    <div id="eventdiv">
+        <span id="event"></span>
+    </div>
+    <!-- Winners Side -->
+    <div id="winnerside">
+        <div id="w0" class="round">
+            <div class="round-text">Grand Final</div>
+            <div id="reset-text" class="round-text">Grand Final Reset</div>
+            <div id="w00" class="game">
+                <div id="w000" class="player1 w00">
+                    <div id="w000country" class="country"></div>
+                    <div id="w000text" class="text">
+                        <span id="w000span">
+                            <span id="w000team" class="team"></span>
+                            <span id="w000tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w000score" class="score"></div>
+                </div>
+                <div id="w001" class="player2 w00">
+                    <div id="w001country" class="country"></div>
+                    <div id="w001text" class="text">
+                        <span id="w001span">
+                            <span id="w001team" class="team"></span>
+                            <span id="w001tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w001score" class="score"></div>
+                </div>
+            </div>
+
+            <div id="w01" class="game">
+                <div id="w010" class="player1 w01">
+                    <div id="w010country" class="country"></div>
+                    <div id="w010text" class="text">
+                        <span id="w010span">
+                            <span id="w010team" class="team"></span>
+                            <span id="w010tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w010score" class="score"></div>
+                </div>
+                <div id="w011" class="player2 w01">
+                    <div id="w011country" class="country"></div>
+                    <div id="w011text" class="text">
+                        <span id="w011span">
+                            <span id="w011team" class="team"></span>
+                            <span id="w011tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w011score" class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="w1" class="round">
+            <div class="round-text">Winners Final</div>
+            <div id="w10" class="game">
+                <div id="w100" class="player1 w10">
+                    <div id="w100country" class="country"></div>
+                    <div id="w100text" class="text">
+                        <span id="w100span">
+                            <span id="w100team" class="team"></span>
+                            <span id="w100tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w100score" class="score"></div>
+                </div>
+                <div id="w101" class="player2 w10">
+                    <div id="w101country" class="country"></div>
+                    <div id="w101text" class="text">
+                        <span id="w101span">
+                            <span id="w101team" class="team"></span>
+                            <span id="w101tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w101score" class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="w2" class="round">
+            <div class="round-text">Winners Semi-Final</div>
+            <div id="w20" class="game">
+                <div id="w200" class="player1 w20">
+                    <div id="w200country" class="country"></div>
+                    <div id="w200text" class="text">
+                        <span id="w200span">
+                            <span id="w200team" class="team"></span>
+                            <span id="w200tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w200score" class="score"></div>
+                </div>
+                <div id="w201" class="player2 w20">
+                    <div id="w201country" class="country"></div>
+                    <div id="w201text" class="text">
+                        <span id="w201span">
+                            <span id="w201team" class="team"></span>
+                            <span id="w201tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w201score" class="score"></div>
+                </div>
+            </div>
+
+            <div id="w21" class="game">
+                <div id="w210" class="player1 w21">
+                    <div id="w210country" class="country"></div>
+                    <div id="w210text" class="text">
+                        <span id="w210span">
+                            <span id="w210team" class="team"></span>
+                            <span id="w210tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w210score" class="score"></div>
+                </div>
+                <div id="w211" class="player2 w21">
+                    <div id="w211country" class="country"></div>
+                    <div id="w211text" class="text">
+                        <span id="w211span">
+                            <span id="w211team" class="team"></span>
+                            <span id="w211tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="w211score" class="score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Losers Side -->
+    <div id="loserside">
+        <div id="l0" class="round">
+            <div class="round-text">Losers Final</div>
+            <div id="l00" class="game">
+                <div id="l000" class="player1 l00">
+                    <div id="l000country" class="country"></div>
+                    <div id="l000text" class="text">
+                        <span id="l000span">
+                            <span id="l000team" class="team"></span>
+                            <span id="l000tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l000score" class="score"></div>
+                </div>
+                <div id="l001" class="player2 l00">
+                    <div id="l001country" class="country"></div>
+                    <div id="l001text" class="text">
+                        <span id="l001span">
+                            <span id="l001team" class="team"></span>
+                            <span id="l001tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l001score" class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="l1" class="round">
+            <div class="round-text">Losers Semi-Final</div>
+            <div id="l10" class="game">
+                <div id="l100" class="player1 l10">
+                    <div id="l100country" class="country"></div>
+                    <div id="l100text" class="text">
+                        <span id="l100span">
+                            <span id="l100team" class="team"></span>
+                            <span id="l100tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l100score" class="score"></div>
+                </div>
+                <div id="l101" class="player2 l10">
+                    <div id="l101country" class="country"></div>
+                    <div id="l101text" class="text">
+                        <span id="l101span">
+                            <span id="l101team" class="team"></span>
+                            <span id="l101tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l101score" class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="l2" class="round">
+            <div class="round-text">Losers Quarter-Final</div>
+            <div id="l20" class="game">
+                <div id="l200" class="player1 l20">
+                    <div id="l200country" class="country"></div>
+                    <div id="l200text" class="text">
+                        <span id="l200span">
+                            <span id="l200team" class="team"></span>
+                            <span id="l200tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l200score" class="score"></div>
+                </div>
+                <div id="l201" class="player2 l20">
+                    <div id="l201country" class="country"></div>
+                    <div id="l201text" class="text">
+                        <span id="l201span">
+                            <span id="l201team" class="team"></span>
+                            <span id="l201tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l201score" class="score"></div>
+                </div>
+            </div>
+
+            <div id="l21" class="game">
+                <div id="l210" class="player1 l21">
+                    <div id="l210country" class="country"></div>
+                    <div id="l210text" class="text">
+                        <span id="l210span">
+                            <span id="l210team" class="team"></span>
+                            <span id="l210tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l210score" class="score"></div>
+                </div>
+                <div id="l211" class="player2 l21">
+                    <div id="l211country" class="country"></div>
+                    <div id="l211text" class="text">
+                        <span id="l211span">
+                            <span id="l211team" class="team"></span>
+                            <span id="l211tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l211score" class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="l3" class="round">
+            <div class="round-text">Losers Eighth Final</div>
+            <div id="l30" class="game">
+                <div id="l300" class="player1 l30">
+                    <div id="l300country" class="country"></div>
+                    <div id="l300text" class="text">
+                        <span id="l300span">
+                            <span id="l300team" class="team"></span>
+                            <span id="l300tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l300score" class="score"></div>
+                </div>
+                <div id="l301" class="player2 l30">
+                    <div id="l301country" class="country"></div>
+                    <div id="l301text" class="text">
+                        <span id="l301span">
+                            <span id="l301team" class="team"></span>
+                            <span id="l301tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l301score" class="score"></div>
+                </div>
+            </div>
+
+            <div id="l31" class="game">
+                <div id="l310" class="player1 l31">
+                    <div id="l310country" class="country"></div>
+                    <div id="l310text" class="text">
+                        <span id="l310span">
+                            <span id="l310team" class="team"></span>
+                            <span id="l310tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l310score" class="score"></div>
+                </div>
+                <div id="l311" class="player2 l31">
+                    <div id="l311country" class="country"></div>
+                    <div id="l311text" class="text">
+                        <span id="l311span">
+                            <span id="l311team" class="team"></span>
+                            <span id="l311tag" class="tag"></span>
+                        </span>
+                    </div>
+                    <div id="l311score" class="score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linien zwischen den Games -->
+
+    <!-- Winners Semi -> Winners Final -->
+
+    <div class="w20-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 723px; top: 330px; border-radius: 5px 5px 0px 5px;">
+    </div>
+    <div class="w20-lines lines" style="position: absolute; width: 4px; height: 58px; left: 764px; top: 334px;">
+    </div>
+    <div class="w20-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 764px; top: 392px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <div class="w21-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 723px; top: 498px; border-radius: 5px 0px 5px 5px;">
+    </div>
+    <div class="w21-lines lines" style="position: absolute; width: 4px; height: 59px; left: 764px; top: 439px;">
+    </div>
+    <div class="w21-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 764px; top: 435px; border-radius: 5px 5px 5px 0px;">
+    </div>
+
+    <!-- Winners Final, Losers Final -> Grand Final -->
+
+    <div class="w10-lines lines"
+        style="position: absolute; width: 45px; height: 5px; left: 1109px; top: 414px; border-radius: 5px 0px 5px 5px;">
+    </div>
+    <div class="w10-lines lines" style="position: absolute; width: 4px; height: 18px; left: 1150px; top: 396px;">
+    </div>
+    <div class="w10-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 1150px; top: 392px; border-radius: 5px 5px 5px 0px;">
+    </div>
+
+    <div class="l00-lines lines"
+        style="position: absolute; width: 4px; height: 19px; left: 1150px; top: 439px; border-radius: 0px 0px 5px 5px;">
+    </div>
+    <div class="l00-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 1150px; top: 435px; border-radius: 5px 5px 5px 0px;">
+    </div>
+
+    <!-- Grand Final -> Reset -->
+
+    <div class="w01-lines lines"
+        style="position: absolute; width: 87px; height: 4px; left: 1495px; top: 414px; border-radius: 5px;">
+    </div>
+
+    <!-- Losers Eigth, Winners Semi -> Losers Quarter-Final -->
+
+    <div class="w20-lines lines"
+        style="position: absolute; width: 4px; height: 18px; left: 378px; top: 672px; border-radius: 5px 5px 0px 0px;">
+    </div>
+    <div class="w20-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 378px; top: 690px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <div class="l30-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 337px; top: 712px; border-radius: 5px 5px 0px 5px;">
+    </div>
+    <div class="l30-lines lines" style="position: absolute; width: 4px; height: 17px; left: 378px; top: 716px;">
+    </div>
+    <div class="l30-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 378px; top: 733px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+
+    <div class="w21-lines lines"
+        style="position: absolute; width: 4px; height: 18px; left: 378px; top: 840px; border-radius: 5px 5px 0px 0px;">
+    </div>
+    <div class="w21-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 378px; top: 858px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <div class="l31-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 337px; top: 880px; border-radius: 5px 5px 0px 5px;">
+    </div>
+    <div class="l31-lines lines" style="position: absolute; width: 4px; height: 17px; left: 378px; top: 884px;">
+    </div>
+    <div class="l31-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 378px; top: 901px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <!-- Losers Quarter-Final -> Losers Semi-Final -->
+
+    <div class="l20-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 723px; top: 712px; border-radius: 5px 5px 0px 5px;">
+    </div>
+    <div class="l20-lines lines" style="position: absolute; width: 4px; height: 58px; left: 764px; top: 716px;">
+    </div>
+    <div class="l20-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 764px; top: 774px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <div class="l21-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 723px; top: 880px; border-radius: 5px 0px 5px 5px;">
+    </div>
+    <div class="l21-lines lines" style="position: absolute; width: 4px; height: 59px; left: 764px; top: 821px;">
+    </div>
+    <div class="l21-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 764px; top: 817px; border-radius: 5px 5px 5px 0px;">
+    </div>
+
+    <!-- Losers Semi-Final, Winners Final -> Losers Final -->
+
+    <div class="w10-lines lines"
+        style="position: absolute; width: 4px; height: 18px; left: 1150px; top: 756px; border-radius: 5px 5px 0px 0px;">
+    </div>
+    <div class="w10-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 1150px; top: 774px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+    <div class="l10-lines lines"
+        style="position: absolute; width: 45px; height: 4px; left: 1109px; top: 796px; border-radius: 5px 5px 0px 5px;">
+    </div>
+    <div class="l10-lines lines" style="position: absolute; width: 4px; height: 17px; left: 1150px; top: 800px;">
+    </div>
+    <div class="l10-lines lines"
+        style="position: absolute; width: 46px; height: 4px; left: 1150px; top: 817px; border-radius: 0px 5px 5px 5px;">
+    </div>
+
+</body>
+
+</html>

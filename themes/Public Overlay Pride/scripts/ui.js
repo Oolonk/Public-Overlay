@@ -456,7 +456,6 @@ var playerscore = new Array(4);
 
 var tag = new Array(4);
 var pronoun = new Array(4);
-var country = new Array(4);
 
 var team = ['', '', '', ''];
 
@@ -908,11 +907,20 @@ function playerUpdate(portArray) {
         const playerPosition = piio.cache.scoreboard.ports[portArray[port].port];
         if (piio.getPlayer(playerPosition[0], playerPosition[1]).name != tag[port]) {
           tag[port] = piio.getPlayer(playerPosition[0], playerPosition[1]).name;
-          jQuery(`#playerdiv${y}`).animate({ "opacity": "0" }, 200);
-          jQuery(`#playercountry${y}`).animate({ "opacity": "0" }, 200, function () {
+          jQuery(`.playerflag${y}`).animate({ "opacity": "0" }, 200);
+          jQuery(`#playerdiv${y}`).animate({ "opacity": "0" }, 200, function () {
             jQuery(`#playerdiv${y}`).css({ 'font-size': "25px" });
             jQuery(`#playerpronoun${y}`).css({ 'font-size': "15px" });
-            jQuery(`#playercountry${y}`).css('background-image', `url(assets/country/${piio.getPlayer(playerPosition[0], playerPosition[1]).country}.svg)`);
+            if (piio.getPlayer(playerPosition[0], playerPosition[1]).pride.length == 0) {
+              jQuery(`#playerflag${y}1`).css('background-image', ``);
+              jQuery(`#playerflag${y}2`).css('background-image', ``);
+            } else if (piio.getPlayer(playerPosition[0], playerPosition[1]).pride.length == 1) {
+              jQuery(`#playerflag${y}1`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
+              jQuery(`#playerflag${y}2`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
+            } else {
+              jQuery(`#playerflag${y}1`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
+              jQuery(`#playerflag${y}2`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[1]}.svg)`);
+            }
             jQuery(`#playername${y}`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).name);
             jQuery(`#playerpronoun${y}`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).pronoun.toLowerCase());
             while (jQuery(`#playerdiv${y}`).width() > 207) {
@@ -921,14 +929,13 @@ function playerUpdate(portArray) {
               jQuery(`#playerdiv${y}`).css({ 'font-size': fontSize });
               jQuery(`#playerpronoun${y}`).css({ 'font-size': (fontSize * 0.6) });
             }
-            jQuery(`#playercountry${y}`).animate({ "opacity": "1" }, 200);
+            jQuery(`.playerflag${y}`).animate({ "opacity": "1" }, 200);
             jQuery(`#playerdiv${y}`).animate({ "opacity": "1" }, 200);
           });
         }
         if ((piio.getPlayer(playerPosition[0], playerPosition[1]).team.length == 0 && team[port] != '') || (piio.getPlayer(playerPosition[0], playerPosition[1]).team.length > 0 && piio.getPlayer(playerPosition[0], playerPosition[1]).team[0] != team[port])) {
           jQuery(`#playerteam${y}`).animate({ "opacity": "0" }, 200);
           jQuery(`#playerteamlogo${y}`).animate({ "opacity": "0" }, 200, function () {
-            jQuery(`#playercountry${y}`).css('background-image', `url(assets/country/${piio.getPlayer(playerPosition[0], playerPosition[1]).country}.svg)`);
             var teamName = '';
             team[port] = '';
             if (piio.getPlayer(playerPosition[0], playerPosition[1]).team.length > 0) {
@@ -971,6 +978,7 @@ function playerUpdate(portArray) {
   }
   changeTeam(portArray);
 }
+
 function changeTeam(portArray) {
   var y = 1;
   var i = 0;
@@ -1049,7 +1057,7 @@ function changeGF(i, y, playerPosition0, playerPosition1, port) {
   if (type == "doubles" || type == "crews") {
     if (jQuery('#playergf' + port2).text() != "") {
       jQuery("#playerdiv" + port2).animate({ "opacity": "0" }, 200);
-      jQuery(`#playercountry${port2}`).animate({ "opacity": "0" }, 200, function () {
+      jQuery(`.playerflag${port2}`).animate({ "opacity": "0" }, 200, function () {
         jQuery(`#playerdiv${port2}`).css({ 'font-size': "25px" });
         jQuery(`#playerpronoun${y}`).css({ 'font-size': "15px" });
         jQuery(`#playergf${port2}`).text("");
@@ -1059,7 +1067,7 @@ function changeGF(i, y, playerPosition0, playerPosition1, port) {
           jQuery(`#playerdiv${port2}`).css({ 'font-size': fontSize });
           jQuery(`#playerpronoun${port2}`).css({ 'font-size': (fontSize * 0.6) });
         }
-        jQuery(`#playercountry${port2}`).animate({ "opacity": "1" }, 200);
+        jQuery(`.playerflag${port2}`).animate({ "opacity": "1" }, 200);
         jQuery(`#playerdiv${port2}`).animate({ "opacity": "1" }, 200);
       });
     }
@@ -1071,7 +1079,7 @@ function changeGF(i, y, playerPosition0, playerPosition1, port) {
   } else {
     tag[port] = piio.getPlayer(playerPosition0, playerPosition1).name;
     jQuery(`#playerdiv${port2}`).animate({ "opacity": "0" }, 200);
-    jQuery(`#playercountry${port2}`).animate({ "opacity": "0" }, 200, function () {
+    jQuery(`.playerflag${port2}`).animate({ "opacity": "0" }, 200, function () {
       jQuery(`#playerdiv${port2}`).css({ 'font-size': "25px" });
       jQuery(`#playerpronoun${y}`).css({ 'font-size': "15px" });
       jQuery(`#playergf${port2}`).text(gfcache);
@@ -1081,7 +1089,7 @@ function changeGF(i, y, playerPosition0, playerPosition1, port) {
         jQuery(`#playerdiv${port2}`).css({ 'font-size': fontSize });
         jQuery(`#playerpronoun${port2}`).css({ 'font-size': (fontSize * 0.6) });
       }
-      jQuery(`#playercountry${port2}`).animate({ "opacity": "1" }, 200);
+      jQuery(`.playerflag${port2}`).animate({ "opacity": "1" }, 200);
       jQuery(`#playerdiv${port2}`).animate({ "opacity": "1" }, 200);
     });
   }

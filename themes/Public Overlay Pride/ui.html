@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="scripts/ui.js"></script>
+  <script src="assets/script/jquery.js"></script>
+  <script src="assets/script/jquery-ui.js"></script>
+  <link rel="stylesheet" href="styles/ui.css">
+  <title></title>
+</head>
+
+<body>
+  <!-- TournamentName -->
+  <div id="tournamentnamediv">
+    <span id="tournamentname"></span>
+  </div>
+  <!-- Timer-->
+  <div id="timerdiv">
+    <span id="timerminute"></span><span id="timerms"></span>
+  </div>
+  <!-- Game End -->
+  <div id="gameEnd">
+    <span id="gameEndSpan"></span>
+    <div id="gameEndVertical1" class="gameEndVertical"></div>
+    <div id="gameEndVertical2" class="gameEndVertical"></div>
+  </div>
+  <!-- Player Stats -->
+  <div id="leftoverlay" class="overlaysites">
+    <div id="playeroverlay1" class="overlay">
+      <div class="nana" id="nana1">
+        <span id="nanapercentage1" class="nanaperc1"></span><span class="nanapercent nanaperc1">%</span>
+      </div>
+      <div id="playeranimation1" class="animation">
+        <div class="black" id="playercolor1">
+          <div id="playerstock1" class="stock">
+            <div id="playerstock11" class="ps1 ps" style="left: 0px;">
+              <img id="playerstock11-color" class="stockcolor stock1 stockcolor1">
+              <img id="playerstock11-black" class="stockblack stock1">
+            </div>
+            <div id="playerstock12" class="ps1 ps" style="left: 36px;">
+              <img id="playerstock11-color" class="stockcolor stock1 stockcolor1">
+              <img id="playerstock11-black" class="stockblack stock1">
+            </div>
+            <div id="playerstock13" class="ps1 ps" style="left: 72px;">
+              <img id="playerstock11-color" class="stockcolor stock1 stockcolor1">
+              <img id="playerstock11-black" class="stockblack stock1">
+            </div>
+            <div id="playerstock14" class="ps1 ps" style="left: 108px;">
+              <img id="playerstock11-color" class="stockcolor stock1 stockcolor1">
+              <img id="playerstock11-black" class="stockblack stock1">
+            </div>
+          </div>
+          <div id="playercombo1" class="combo"><span id="combo1" class="char1"></span><span style="vertical-align: 40%;"
+              class="hit char1">HIT</span></div>
+          <div id="playerpercentage1" class="percentage"><span id="percentage1" class="perc1"></span><span
+              class="percent perc1">%</span></div>
+        </div>
+        <div id="playercardopacity1">
+          <div class="playercard" id="playercard1">
+            <div id="cardname1" class="cardname card">
+              <div class="cardimage leftpicture flag1 playerflag1" id="playerflag11"></div>
+              <div class="cardimage leftpicture flag2 playerflag1" id="playerflag12"></div>
+              <div class="leftplayerdiv" id="playerdiv1">
+                <span id="playergf1" class="grandfinal"></span>
+                <span id="playername1"></span>
+                <span class="playerpronoun" id="playerpronoun1"></span>
+              </div>
+            </div>
+            <div id="cardteam1" class="cardteam card">
+              <div class="cardimage leftpicture" id="playerteamlogo1"></div>
+              <div class="leftplayerdiv">
+                <span id="playerteam1"></span>
+              </div>
+            </div>
+            <div id="cardtwitter1" class="cardtwitter card">
+              <object type="image/svg+xml" data="assets/glitches/twitter.svg" class="leftpicture"></object>
+              <div class="leftplayerdiv">
+                <span id="playertwitter1"></span>
+              </div>
+            </div>
+            <div class="score singlesscore" id="singlesteam1score">
+              <span class="score1"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="playercolor1" class="color"></div> -->
+    </div>
+
+
+    <div id="playeroverlay2" class="overlay">
+      <div class="nana" id="nana2">
+        <span id="nanapercentage2" class="nanaperc2"></span><span class="nanapercent nanaperc2">%</span>
+      </div>
+      <div id="playeranimation2" class="animation">
+        <div class="black" id="playercolor2">
+          <div id="playerstock2" class="stock">
+            <div id="playerstock21" class="ps2 ps" style="left: 0px;">
+              <img id="playerstock21-color" class="stockcolor stock2 stockcolor2">
+              <img id="playerstock21-black" class="stockblack stock2">
+            </div>
+            <div id="playerstock22" class="ps2 ps" style="left: 36px;">
+              <img id="playerstock22-color" class="stockcolor stock2 stockcolor2">
+              <img id="playerstock22-black" class="stockblack stock2">
+            </div>
+            <div id="playerstock23" class="ps2 ps" style="left: 72px;">
+              <img id="playerstock23-color" class="stockcolor stock2 stockcolor2">
+              <img id="playerstock23-black" class="stockblack stock2">
+            </div>
+            <div id="playerstock24" class="ps2 ps" style="left: 108px;">
+              <img id="playerstock24-color" class="stockcolor stock2 stockcolor2">
+              <img id="playerstock24-black" class="stockblack stock2">
+            </div>
+          </div>
+          <div id="playercombo2" class="combo"><span id="combo2" class="char2"></span><span style="vertical-align: 40%;"
+              class="hit char2">HIT</span></div>
+          <div id="playerpercentage2" class="percentage"><span id="percentage2" class="perc2"></span><span
+              class="percent perc2">%</span></div>
+        </div>
+        <div id="playercardopacity2">
+          <div class="playercard" id="playercard2">
+            <div id="cardname2" class="cardname card">
+              <div class="cardimage leftpicture flag1 playerflag2" id="playerflag21"></div>
+              <div class="cardimage leftpicture flag2 playerflag2" id="playerflag22"></div>
+              <div class="leftplayerdiv" id="playerdiv2">
+                <span id="playername2"></span>
+                <span class="playerpronoun" id="playerpronoun2"></span>
+              </div>
+            </div>
+            <div id="cardteam2" class="cardteam card">
+              <div class="cardimage leftpicture" id="playerteamlogo2"></div>
+              <div class="leftplayerdiv">
+                <span id="playerteam2"></span>
+              </div>
+            </div>
+            <div id="cardtwitter2" class="cardtwitter card">
+              <object type="image/svg+xml" data="assets/glitches/twitter.svg" class="leftpicture"></object>
+              <div class="leftplayerdiv">
+                <span id="playertwitter2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="playercolor2" class="color"></div> -->
+    </div>
+  </div>
+
+  <div id="rightoverlay" class="overlaysites">
+    <div id="playeroverlay3" class="overlay">
+      <div class="nana" id="nana3">
+        <span id="nanapercentage3" class="nanaperc3"></span><span class="nanapercent nanaperc3">%</span>
+      </div>
+      <div id="playeranimation3" class="animation">
+        <div class="black" id="playercolor3">
+          <div id="playerstock3" class="stock">
+            <div id="playerstock31" class="ps3 ps" style="right: 0px;">
+              <img id="playerstock31-color" class="stockcolor stock3 stockcolor3">
+              <img id="playerstock31-black" class="stockblack stock3">
+            </div>
+            <div id="playerstock32" class="ps3 ps" style="right: 36px;">
+              <img id="playerstock33-color" class="stockcolor stock3 stockcolor3">
+              <img id="playerstock33-black" class="stockblack stock3">
+            </div>
+            <div id="playerstock33" class="ps3 ps" style="right: 72px;">
+              <img id="playerstock33-color" class="stockcolor stock3 stockcolor3">
+              <img id="playerstock33-black" class="stockblack stock3">
+            </div>
+            <div id="playerstock34" class="ps3 ps" style="right: 108px;">
+              <img id="playerstock33-color" class="stockcolor stock3 stockcolor3">
+              <img id="playerstock33-black" class="stockblack stock3">
+            </div>
+          </div>
+          <div id="playercombo3" class="combo"><span id="combo3" class="char3"></span><span style="vertical-align: 40%;"
+              class="hit char3">HIT</span></div>
+          <div id="playerpercentage3" class="percentage"><span id="percentage3" class="perc3"></span><span
+              class="percent perc3">%</span></div>
+        </div>
+        <div id="playercardopacity3">
+          <div class="playercard" id="playercard3">
+            <div id="cardname3" class="cardname card">
+              <div class="cardimage rightpicture flag1 playerflag3" id="playerflag31"></div>
+              <div class="cardimage rightpicture flag2 playerflag3" id="playerflag32"></div>
+              <div class="rightplayerdiv" id="playerdiv3">
+                <span class="playerpronoun" id="playerpronoun3"></span>
+                <span id="playername3"></span>
+                <span id="playergf3" class="grandfinal"></span>
+              </div>
+            </div>
+            <div id="cardteam3" class="cardteam card">
+              <div class="cardimage rightpicture" id="playerteamlogo3"></div>
+              <div class="rightplayerdiv">
+                <span id="playerteam3"></span>
+              </div>
+            </div>
+            <div id="cardtwitter3" class="cardtwitter card">
+              <object type="image/svg+xml" data="assets/glitches/twitter.svg" class="cardimage rightpicture"></object>
+              <div class="rightplayerdiv">
+                <span id="playertwitter3"></span>
+              </div>
+            </div>
+            <div class="score singlesscore" id="singlesteam2score">
+              <span class="score2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="playercolor3" class="color"></div> -->
+    </div>
+
+
+    <div id="playeroverlay4" class="overlay">
+      <div class="nana" id="nana4">
+        <span id="nanapercentage4" class="nanaperc4"></span><span class="nanapercent nanaperc4">%</span>
+      </div>
+      <div id="playeranimation4" class="animation">
+        <div class="black" id="playercolor4">
+          <div id="playerstock4" class="stock">
+            <div id="playerstock41" class="ps4 ps" style="right: 0px;">
+              <img id="playerstock41-color" class="stockcolor stock4 stockcolor4">
+              <img id="playerstock41-black" class="stockblack stock4">
+            </div>
+            <div id="playerstock42" class="ps4 ps" style="right: 36px;">
+              <img id="playerstock44-color" class="stockcolor stock4 stockcolor4">
+              <img id="playerstock44-black" class="stockblack stock4">
+            </div>
+            <div id="playerstock43" class="ps4 ps" style="right: 72px;">
+              <img id="playerstock44-color" class="stockcolor stock4 stockcolor4">
+              <img id="playerstock44-black" class="stockblack stock4">
+            </div>
+            <div id="playerstock44" class="ps4 ps" style="right: 108px;">
+              <img id="playerstock44-color" class="stockcolor stock4 stockcolor4">
+              <img id="playerstock44-black" class="stockblack stock4">
+            </div>
+          </div>
+          <div id="playercombo4" class="combo"><span id="combo4" class="char4"></span><span style="vertical-align: 40%;"
+              class="hit char4">HIT</span></div>
+          <div id="playerpercentage4" class="percentage"><span id="percentage4" class="perc4"></span><span
+              class="percent perc4">%</span></div>
+        </div>
+        <div id="playercardopacity4">
+          <div class="playercard" id="playercard4">
+            <div id="cardname4" class="cardname card">
+              <div class="cardimage rightpicture flag1 playerflag4" id="playerflag41"></div>
+              <div class="cardimage rightpicture flag2 playerflag4" id="playerflag42"></div>
+              <div class="rightplayerdiv" id="playerdiv4">
+                <span class="playerpronoun" id="playerpronoun4"></span>
+                <span id="playername4"></span>
+              </div>
+            </div>
+            <div id="cardteam4" class="cardteam card">
+              <div class="cardimage rightpicture" id="playerteamlogo4"></div>
+              <div class="rightplayerdiv">
+                <span id="playerteam4"></span>
+              </div>
+            </div>
+            <div id="cardtwitter4" class="cardtwitter card">
+              <object type="image/svg+xml" data="assets/glitches/twitter.svg" class="cardimage rightpicture"></object>
+              <div class="rightplayerdiv">
+                <span id="playertwitter4"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="playercolor4" class="color"></div> -->
+    </div>
+  </div>
+
+  <!-- Phase and BestOF -->
+  <div id="phasediv">
+    <span id="phase">Freeplay</span><br>
+    <span id="bestof"></span>
+  </div>
+
+  <!-- Team Divs -->
+  <div id="teamdivs">
+    <div id="teamdiv1" class="teamdiv">
+      <span id="teamgf1" class="grandfinal" style="padding-left: 9px"></span>
+      <span id="teamname1" style="padding-right: 10px"></span>
+      <span class="doublesscore" id="doublesteamscore1" style="padding-right: 9px">
+        <span class="score1"></span>
+      </span>
+    </div>
+    <div id="teamdiv2" class="teamdiv">
+      <span class="doublesscore" id="doublesteamscore2" style="padding-left: 9px">
+        <span class="score2" style="padding-right: 10px"></span>
+      </span>
+      <span id="teamname2"></span>
+      <span id="teamgf2" class="grandfinal" style="padding-right: 9px"></span>
+    </div>
+  </div>
+  <!-- Intro Sequence -->
+  <!-- Singles -->
+  <div id="introsingles">
+    <div id="intro_p1logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 320px; left: 314px; top: 380px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div id="intro_p2logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 320px; right: 314px; top: 380px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div class="intro_divs" style="left: 314px; top: 378px; height: 2px; width: 0px; position: absolute; z-index: 2001">
+    </div>
+    <div class="intro_divs"
+      style="right: 314px; bottom: 378px; height: 2px; width: 0px; position: absolute; z-index: 2001"></div>
+    <div id="intro_game"
+      style="opacity: 0; left: 314px; top: 702px; width: 1292px; height: 80px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_game_text"
+        style="font-size:80px; opacity: 1; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; line-height: 80px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_phase"
+      style="opacity: 0;left: 314px; top: 296px; width: 1292px; height: 80px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_phase_text"
+        style="font-size:80px; opacity: 1; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; line-height: 80px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_team1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 430px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_team1_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_team2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 430px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_team2_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_name1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 570px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player1"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap;"><span
+          id="intro_name1_text" style="color: black;"></span><span id="intro_gf1"
+          style="color: #a6a6a6; text-shadow: 0 0 .1em black, 0 0 .2em black"></span></span>
+    </div>
+    <div id="intro_name2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 570px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player2"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap; "><span
+          id="intro_name2_text" style="color: black;"></span><span id="intro_gf2"
+          style="color: #a6a6a6; text-shadow: 0 0 .1em black, 0 0 .2em black"></span></span>
+    </div>
+    <span id="intro-vs"
+      style="left: 886px; top: 490px; width: 149px; height: 100px; position: absolute; font-size: 100px; line-height: 100px; text-shadow: none;">VS</span>
+  </div>
+
+  <!-- Doubles -->
+
+  <div id="introdoubles">
+    <div id="intro_team1p1logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 160px; left: 314px; top: 380px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div id="intro_team2p1logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 160px; right: 314px; top: 380px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div id="intro_team1p2logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 160px; left: 314px; top: 540px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div id="intro_team2p2logo" class="intro_teamlogo"
+      style="opacity: 0;width: 552px; height: 160px; right: 314px; top: 540px; position: absolute; background-size: cover; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-repeat:no-repeat; background-position: center center;">
+    </div>
+    <div class="intro_divs"
+      style="left: 314px; top: 378px; height: 2px; width: 0px; background: white; position: absolute; z-index: 2001">
+    </div>
+    <div class="intro_divs"
+      style="right: 314px; bottom: 378px; height: 2px; width: 0px; background: white; position: absolute; z-index: 2001">
+    </div>
+    <div id="intro_game"
+      style="opacity: 0; left: 314px; top: 702px; width: 1292px; height: 80px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_game_text"
+        style="font-size:80px; opacity: 1; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; line-height: 80px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_phase"
+      style="opacity: 0;left: 314px; top: 296px; width: 1292px; height: 80px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_phase_text"
+        style="font-size:80px; opacity: 1; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; line-height: 80px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_player1team1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 380px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player1team1_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_player1team2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 380px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player1team2_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_player1name1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 440px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player1player1"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap;"><span
+          id="intro_player1name1_text" style="color: black;"></span></span>
+    </div>
+    <div id="intro_player1name2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 440px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player1player2"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap; "><span
+          id="intro_player1name2_text" style="color: black;"></span></span>
+    </div>
+    <div id="intro_player2team1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 540px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player2team1_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_player2team2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 540px; width: 552px; height: 60px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player2team2_text"
+        style="font-size:42px; opacity: 1; text-shadow: 0 0 .1em black, 0 0 .2em black; vertical-align: middle; line-height: 60px; white-space: nowrap;"></span>
+    </div>
+    <div id="intro_player2name1 " class="intro_text"
+      style="opacity: 0; left: 314px; top: 600px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player2player1"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap;"><span
+          id="intro_player2name1_text" style="color: black;"></span></span>
+    </div>
+    <div id="intro_player2name2 " class="intro_text"
+      style="opacity: 0; right: 314px; top: 600px; width: 552px; height: 100px; position: absolute; overflow: hidden; text-align: center; text-transform: uppercase;">
+      <span id="intro_player2player2"
+        style="font-size:82px; opacity: 1; vertical-align: middle; line-height: 100px; white-space: nowrap; "><span
+          id="intro_player2name2_text" style="color: black;"></span></span>
+    </div>
+    <div id="intro_team1"
+      style="text-shadow: 0 0 .1em black, 0 0 .2em black; writing-mode: vertical-lr; width: 60px; height: 320px; left: 254px; top: 380px; position: absolute; transform: rotate(180deg); text-align: center">
+      <span id="intro_team1span"
+        style="font-size:42px; opacity: 1; vertical-align: middle; line-height: 60px; white-space: nowrap;"><span
+          id="intro_team1_text" style="color: white;"></span><span id="intro_gf1"
+          style="color: #a6a6a6; text-shadow: 0 0 .1em black, 0 0 .2em black"></span></span>
+    </div>
+    <div id="intro_team2"
+      style="text-shadow: 0 0 .1em black, 0 0 .2em black; writing-mode: vertical-lr; width: 60px; height: 320px; left: 1606px; top: 380px; position: absolute; text-align: center">
+      <span id="intro_team2span"
+        style="font-size:42px; opacity: 1; vertical-align: middle; line-height: 60px; white-space: nowrap;"><span
+          id="intro_gf2" style="color: #a6a6a6; text-shadow: 0 0 .1em black, 0 0 .2em black"></span><span
+          id="intro_team2_text" style="color: white;"></span></span>
+    </div>
+    <span id="intro-vs"
+      style="left: 886px; top: 490px; width: 149px; height: 100px; position: absolute; font-size: 100px; line-height: 100px; text-shadow: none;">VS</span>
+  </div>
+  <!-- Start.gg -->
+  <div id="social_media" style="height: 30px; left: 0px; top: 973px; position: absolute; width: 1920px; opacity: 0;">
+    <div style="left: 0%; position: absolute; width: 480px; height: 30px; ">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="backgroundlink" id="smashggbg">
+          <object style="width: 27px; height:27px; opacity: 1;" type="image/svg+xml"
+            data="assets/glitches/smash.gg.svg"></object>
+          <span id="smashgg" class="links"></span>
+        </div>
+      </div>
+    </div>
+    <div style="left: 25%; position: absolute; width: 480px; height: 30px;">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="backgroundlink">
+          <object style="width: 27px; height:30px;" type="image/svg+xml" data="assets/glitches/youtube.svg"></object>
+          <span id="youtube" class="links">BerlinSmash</span>
+        </div>
+      </div>
+    </div>
+    <div style="left: 50%; position: absolute; width: 480px; height: 30px;">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="backgroundlink">
+          <object style="width: 27px; height:27px;" type="image/svg+xml" data="assets/glitches/discord.svg"></object>
+          <span id="discord" class="links">/AAb4JrK</span>
+        </div>
+      </div>
+    </div>
+    <div style="left: 75%; position: absolute; width: 480px; height: 30px;">
+      <div style=" display: flex; justify-content: center; align-items: center;">
+        <div class="backgroundlink">
+          <object style="width: 27px; height:27px;" type="image/svg+xml" data="assets/glitches/twitch.svg"></object>
+          <span id="twitch" class="links">/BerlinSmash</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

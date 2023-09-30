@@ -1,0 +1,152 @@
+@import "theme.css";
+
+
+body {
+  margin: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+.top {
+  border-radius: 10px 10px 0px 0px;
+  width: 295px;
+  height: 41px;
+  line-height: 50px;
+  background-color: rgb(var(--primarycolor));
+  position: absolute;
+}
+
+.bottom {
+  border-radius: 0px 0px 10px 10px;
+  width: 295px;
+  height: 41px;
+  background-color: rgb(var(--secondarycolor));
+  position: absolute;
+}
+
+.commentatortop .bottom {
+  top: 43px;
+
+}
+
+.commentatorbottom .bottom {
+  bottom: 0px;
+
+}
+
+#leftcomm {
+  width: 366px;
+  height: 72px;
+  left: 297px;
+  top: 893px;
+  position: absolute
+}
+
+#rightcomm {
+  width: 366px;
+  height: 72px;
+  right: 297px;
+  top: 893px;
+  position: absolute
+}
+
+.commpronoun {
+  font-size: 15px;
+  text-transform: lowercase;
+}
+
+.commteam {
+  color: #bfbfbf;
+}
+
+.playertext {
+  left: 42px;
+  top: 0px;
+  position: absolute;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
+  line-height: 42px;
+}
+
+.flag {
+  left: 6px;
+  background-size: contain;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+}
+
+.flag1 {
+  /* clip-path: polygon(0 0, 100% 0%, 0 100%); */
+  clip-path: polygon(0 0, 67% 0, 33% 100%, 0% 100%);
+}
+
+.flag2 {
+  /* clip-path: polygon(100% 100%, 100% 0%, 0 100%); */
+  clip-path: polygon(100% 0, 67% 0, 33% 100%, 100% 100%);
+}
+
+.twittericon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  left: 6px;
+}
+
+.twittertext {
+  left: 42px;
+  top: 0px;
+  position: absolute;
+  font-size: 25px;
+  height: 42px;
+  width: fit-content;
+  line-height: 42px;
+}
+
+#righttwittericon {
+  right: 5px;
+}
+
+#teamicon {
+  right: 6px;
+}
+
+#commentatordiv {
+  bottom: 158px;
+  position: absolute;
+  width: calc(100% - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.commentator {
+  width: 295px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.commentatortop>.centerlize {
+  margin-top: 0px;
+}
+
+.commentatorbottom>.centerlize {
+  margin-bottom: 0px;
+}
+
+.centerlize {
+  margin: auto;
+  width: inherit;
+  display: block;
+  height: 84px;
+  width: 0px;
+  flex: 0 0 0;
+  transform: translateX(-147.5px);
+}

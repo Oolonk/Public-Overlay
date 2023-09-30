@@ -1,0 +1,97 @@
+{
+	"name": "Public Overlay Pride",
+	"resolution": [
+		1920,
+		1080
+	],
+	"author": "Oolonk",
+	"caster": 2,
+	"fields": [
+		{
+			"name": "round",
+			"label": "Round",
+			"type": "text",
+			"span": 2,
+			"smashgg": "fullRoundText",
+			"matchlist": true,
+			"checkbox": false
+		},
+		{
+			"name": "bo",
+			"label": "Best of",
+			"type": "dropdown",
+			"options": [
+				"freeplay",
+				"3",
+				"5",
+				"9"
+			],
+			"checkbox": false
+		},
+		{
+			"name": "tournamentname",
+			"label": "Tournament Name",
+			"smashgg": "tournamentName",
+			"type": "text",
+			"span": 2,
+			"checkbox": false
+		},
+		{
+			"name": "location",
+			"label": "Location",
+			"type": "text",
+			"checkbox": false
+		},
+		{
+			"name": "smashgg",
+			"label": "Start.GG",
+			"type": "text",
+			"smashgg": "slug",
+			"checkbox": false
+		},
+		{
+			"name": "countdown",
+			"label": "Countdown",
+			"type": "time",
+			"checkbox": true
+		},
+		{
+			"name": "switchtostart",
+			"label": "Start Switching to",
+			"type": "dropdown",
+			"options": [
+				"game",
+				"2shot"
+			],
+			"checkbox": true
+		},
+		{
+			"name": "switchtoend",
+			"label": "End Switching to",
+			"type": "dropdown",
+			"options": [
+				"2shot",
+				"playershot",
+				"playershot score",
+				"commentator"
+			],
+			"checkbox": true
+		},
+		{
+			"name": "bottombar",
+			"label": "Bottombar Action Checked = Show",
+			"type": "dropdown",
+			"options": [
+				"commentator",
+				"freetext"
+			],
+			"checkbox": true
+		},
+		{
+			"name": "freetext",
+			"label": "Free Text",
+			"type": "text",
+			"checkbox": false
+		}
+	]
+}
