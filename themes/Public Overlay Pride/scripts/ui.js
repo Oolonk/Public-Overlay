@@ -634,175 +634,180 @@ function introsingles(test) {
 }
 
 function introdoubles(test) {
-  started = true;
-  let test2 = [...test];
+  try {
+    started = true;
+    let test2 = [...test];
 
-  if (!(test2[0].teamId == test2[1].teamId)) {
+    if (!(test2[0].teamId == test2[1].teamId)) {
 
-    if (test2[0].teamId == test2[2].teamId) {
-      var b = test2[1];
-      test[1] = test2[2];
-      test[2] = b;
-    } else if (test2[0].teamId == test2[3].teamId) {
-      var a = test2[2];
-      var b = test2[1];
-      test[1] = test2[3];
-      test[2] = b;
-      test[3] = a;
+      if (test2[0].teamId == test2[2].teamId) {
+        var b = test2[1];
+        test[1] = test2[2];
+        test[2] = b;
+      } else if (test2[0].teamId == test2[3].teamId) {
+        var a = test2[2];
+        var b = test2[1];
+        test[1] = test2[3];
+        test[2] = b;
+        test[3] = a;
+      }
     }
-  }
-  let team1color = test[0].teamId;
-  let team1ports = [[test[0].port, test[1].port], test[2].port, test[3].port];
-  let teamCache = [0, 0];
-  let teamlinkstrue = 2;
-  if (piio.getPort(1) == team1ports[0][0] || piio.getPort(1) == team1ports[0][1]) {
-    teamlinkstrue = 1;
-  }
-
-  if (piio.getState(1) == 0)
-    $(`#intro_gf${teamlinkstrue}`).text("");
-  else if (piio.getState(1) == 1)
-    $(`#intro_gf${teamlinkstrue}`).text(" [W]");
-  else
-    $(`#intro_gf${teamlinkstrue}`).text(" [L]");
-
-  if (piio.getState(2) == 0)
-    $(`#intro_gf${3 - teamlinkstrue}`).text("");
-  else if (piio.getState(1) == 1)
-    $(`#intro_gf${3 - teamlinkstrue}`).text("[W] ");
-  else
-    $(`#intro_gf${3 - teamlinkstrue}`).text("[L] ");
-  for (let i = 0; i < 2; i++) {
-    for (let y = 0; y < 2; y++) {
-      let z = y + (i * 2);
-      let ports = piio.cache.scoreboard.ports[test[z].port]
-      console.log(`#intro_player${i + 1}name${z + 1}_text`);
-      $(`#intro_player${y + 1}name${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
-      $(`#intro_player${y + 1}team${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
-      jQuery(`#intro_team${y + 1}p${i + 1}logo`).css("background-image", `url(assets/team/${piio.getPlayer(ports[0], ports[1]).team[0]}.svg)`);
+    let team1color = test[0].teamId;
+    let team1ports = [[test[0].port, test[1].port], test[2].port, test[3].port];
+    let teamCache = [0, 0];
+    let teamlinkstrue = 2;
+    if (piio.getPort(1) == team1ports[0][0] || piio.getPort(1) == team1ports[0][1]) {
+      teamlinkstrue = 1;
     }
+
+    if (piio.getState(1) == 0)
+      $(`#intro_gf${teamlinkstrue}`).text("");
+    else if (piio.getState(1) == 1)
+      $(`#intro_gf${teamlinkstrue}`).text(" [W]");
+    else
+      $(`#intro_gf${teamlinkstrue}`).text(" [L]");
+
+    if (piio.getState(2) == 0)
+      $(`#intro_gf${3 - teamlinkstrue}`).text("");
+    else if (piio.getState(1) == 1)
+      $(`#intro_gf${3 - teamlinkstrue}`).text("[W] ");
+    else
+      $(`#intro_gf${3 - teamlinkstrue}`).text("[L] ");
+    for (let i = 0; i < 2; i++) {
+      for (let y = 0; y < 2; y++) {
+        let z = y + (i * 2);
+        let ports = piio.cache.scoreboard.ports[test[z].port]
+        console.log(`#intro_player${i + 1}name${z + 1}_text`);
+        $(`#intro_player${y + 1}name${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
+        $(`#intro_player${y + 1}team${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
+        jQuery(`#intro_team${y + 1}p${i + 1}logo`).css("background-image", `url(assets/team/${piio.getPlayer(ports[0], ports[1]).team[0]}.svg)`);
+      }
+    }
+    $('#intro_team1_text').text(piio.getTeamName(teamlinkstrue));
+    $('#intro_team2_text').text(piio.getTeamName(3 - teamlinkstrue));
+    if (test[0].teamId == 0) {
+      jQuery('#intro_player1team1_text').css("color", "rgb(var(--p1))");
+      jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
+      jQuery('#intro_player2team1_text').css("color", "rgb(var(--p1))");
+      jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
+    } else if (test[0].teamId == 1) {
+      jQuery('#intro_player1team1_text').css("color", "rgb(var(--p2))");
+      jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
+      jQuery('#intro_player2team1_text').css("color", "rgb(var(--p2))");
+      jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
+    } else if (test[0].teamId == 2) {
+      jQuery('#intro_player1team1_text').css("color", "rgb(var(--p4))");
+      jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
+      jQuery('#intro_player2team1_text').css("color", "rgb(var(--p4))");
+      jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
+    } else {
+      jQuery('#intro_player1team1_text').css("color", "rgb(var(--cpu))");
+      jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
+      jQuery('#intro_player2team1_text').css("color", "rgb(var(--cpu))");
+      jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
+    }
+    if (test[2].teamId == 0) {
+      jQuery('#intro_player1team2_text').css("color", "rgb(var(--p1))");
+      jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
+      jQuery('#intro_player2team2_text').css("color", "rgb(var(--p1))");
+      jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
+    } else if (test[2].teamId == 1) {
+      jQuery('#intro_player1team2_text').css("color", "rgb(var(--p2))");
+      jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
+      jQuery('#intro_player2team2_text').css("color", "rgb(var(--p2))");
+      jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
+    } else if (test[2].teamId == 2) {
+      jQuery('#intro_player1team2_text').css("color", "rgb(var(--p4))");
+      jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
+      jQuery('#intro_player2team2_text').css("color", "rgb(var(--p4))");
+      jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
+    } else {
+      jQuery('#intro_player1team2_text').css("color", "rgb(var(--cpu))");
+      jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
+      jQuery('#intro_player2team2_text').css("color", "rgb(var(--cpu))");
+      jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
+    }
+    const game = piio.getScore(1) + piio.getScore(2) + 1;
+    jQuery('#intro_phase_text').text(piio.cache.scoreboard.fields.round.value);
+    jQuery('#intro_game_text').text(`game ${game} out of ${piio.cache.scoreboard.fields.bo.value}`);
+    while (jQuery('#intro_phase_text').width() > 1292) {
+      var fontSize = parseInt(jQuery("#intro_phase_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_phase_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_game_text').width() > 1292) {
+      var fontSize = parseInt(jQuery("#intro_game_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_game_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player1player1').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player1player1").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player1player1").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player1player2').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player1player2").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player1player2").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player1team1_text').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player1team1_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player1team1_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player1team2_text').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player1team2_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player1team2_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player2player1').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player2player1").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player2player1").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player2player2').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player2player2").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player2player2").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player2team1_text').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player2team1_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player2team1_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_player2team2_text').width() > 552) {
+      var fontSize = parseInt(jQuery("#intro_player2team2_text").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_player2team2_text").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_team1span').height() > 320) {
+      var fontSize = parseInt(jQuery("#intro_team1span").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_team1span").css({'font-size': fontSize});
+    }
+    while (jQuery('#intro_team2span').height() > 320) {
+      var fontSize = parseInt(jQuery("#intro_team2span").css("font-size"));
+      fontSize = `${fontSize - 1}px`;
+      jQuery("#intro_team2span").css({'font-size': fontSize});
+    }
+    jQuery('.intro_divs').animate({"width": "+1292"}, 566, "easeInOutQuart");
+    jQuery('.intro_teamlogo').animate({"opacity": ".5"}, 556);
+    jQuery('#intro_game').animate({"opacity": "1"}, 556);
+    jQuery('#intro_phase').animate({"opacity": "1"}, 556);
+    setTimeout(function () {
+      jQuery('.intro_text').animate({"opacity": "1"}, 283, function () {
+        setTimeout(function () {
+          jQuery('#introdoubles').animate({"opacity": "0"}, 283, function () {
+            if (document.getElementById("introdoubles"))
+              document.getElementById("introdoubles").remove();
+          });
+        }, 1000);
+      });
+    }, 283);
+  } catch (e) {
+
+    document.getElementById("introdoubles").remove();
   }
-  $('#intro_team1_text').text(piio.getTeamName(teamlinkstrue));
-  $('#intro_team2_text').text(piio.getTeamName(3 - teamlinkstrue));
-  if (test[0].teamId == 0) {
-    jQuery('#intro_player1team1_text').css("color", "rgb(var(--p1))");
-    jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
-    jQuery('#intro_player2team1_text').css("color", "rgb(var(--p1))");
-    jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
-  } else if (test[0].teamId == 1) {
-    jQuery('#intro_player1team1_text').css("color", "rgb(var(--p2))");
-    jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
-    jQuery('#intro_player2team1_text').css("color", "rgb(var(--p2))");
-    jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
-  } else if (test[0].teamId == 2) {
-    jQuery('#intro_player1team1_text').css("color", "rgb(var(--p4))");
-    jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
-    jQuery('#intro_player2team1_text').css("color", "rgb(var(--p4))");
-    jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
-  } else {
-    jQuery('#intro_player1team1_text').css("color", "rgb(var(--cpu))");
-    jQuery('#intro_player1name1_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
-    jQuery('#intro_player2team1_text').css("color", "rgb(var(--cpu))");
-    jQuery('#intro_player2name1_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
-  }
-  if (test[2].teamId == 0) {
-    jQuery('#intro_player1team2_text').css("color", "rgb(var(--p1))");
-    jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
-    jQuery('#intro_player2team2_text').css("color", "rgb(var(--p1))");
-    jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p1)), 0 0 .2em rgb(var(--p1))");
-  } else if (test[2].teamId == 1) {
-    jQuery('#intro_player1team2_text').css("color", "rgb(var(--p2))");
-    jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
-    jQuery('#intro_player2team2_text').css("color", "rgb(var(--p2))");
-    jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p2)), 0 0 .2em rgb(var(--p2))");
-  } else if (test[2].teamId == 2) {
-    jQuery('#intro_player1team2_text').css("color", "rgb(var(--p4))");
-    jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
-    jQuery('#intro_player2team2_text').css("color", "rgb(var(--p4))");
-    jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--p4)), 0 0 .2em rgb(var(--p4))");
-  } else {
-    jQuery('#intro_player1team2_text').css("color", "rgb(var(--cpu))");
-    jQuery('#intro_player1name2_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
-    jQuery('#intro_player2team2_text').css("color", "rgb(var(--cpu))");
-    jQuery('#intro_player2name2_text').css("text-shadow", "0 0 .1em rgb(var(--cpu)), 0 0 .2em rgb(var(--cpu))");
-  }
-  const game = piio.getScore(1) + piio.getScore(2) + 1;
-  jQuery('#intro_phase_text').text(piio.cache.scoreboard.fields.round.value);
-  jQuery('#intro_game_text').text(`game ${game} out of ${piio.cache.scoreboard.fields.bo.value}`);
-  while (jQuery('#intro_phase_text').width() > 1292) {
-    var fontSize = parseInt(jQuery("#intro_phase_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_phase_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_game_text').width() > 1292) {
-    var fontSize = parseInt(jQuery("#intro_game_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_game_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player1player1').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player1player1").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player1player1").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player1player2').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player1player2").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player1player2").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player1team1_text').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player1team1_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player1team1_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player1team2_text').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player1team2_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player1team2_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player2player1').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player2player1").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player2player1").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player2player2').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player2player2").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player2player2").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player2team1_text').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player2team1_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player2team1_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_player2team2_text').width() > 552) {
-    var fontSize = parseInt(jQuery("#intro_player2team2_text").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_player2team2_text").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_team1span').height() > 320) {
-    var fontSize = parseInt(jQuery("#intro_team1span").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_team1span").css({ 'font-size': fontSize });
-  }
-  while (jQuery('#intro_team2span').height() > 320) {
-    var fontSize = parseInt(jQuery("#intro_team2span").css("font-size"));
-    fontSize = `${fontSize - 1}px`;
-    jQuery("#intro_team2span").css({ 'font-size': fontSize });
-  }
-  jQuery('.intro_divs').animate({ "width": "+1292" }, 566, "easeInOutQuart");
-  jQuery('.intro_teamlogo').animate({ "opacity": ".5" }, 556);
-  jQuery('#intro_game').animate({ "opacity": "1" }, 556);
-  jQuery('#intro_phase').animate({ "opacity": "1" }, 556);
-  setTimeout(function () {
-    jQuery('.intro_text').animate({ "opacity": "1" }, 283, function () {
-      setTimeout(function () {
-        jQuery('#introdoubles').animate({ "opacity": "0" }, 283, function () {
-          if (document.getElementById("introdoubles"))
-            document.getElementById("introdoubles").remove();
-        });
-      }, 1000);
-    });
-  }, 283);
 }
 
 function introcrews(test) {

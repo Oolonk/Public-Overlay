@@ -635,6 +635,7 @@ function introsingles(test) {
 }
 
 function introdoubles(test) {
+  try {
   started = true;
   let test2 = [...test];
 
@@ -804,6 +805,10 @@ function introdoubles(test) {
       }, 1000);
     });
   }, 283);
+} catch (e) {
+
+  document.getElementById("introdoubles").remove();
+}
 }
 
 function introcrews(test) {
