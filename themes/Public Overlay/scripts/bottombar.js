@@ -1,5 +1,5 @@
 
-var piio = new PiioConnector("bottombar");
+var piio = new PiioConnector("bottombar", ['scoreboard', 'obsSceneChanged']);
 var scenename;
 var locationvar;
 var intervalnum = 1;
@@ -14,42 +14,13 @@ var leftwidth = 0;
 var resultsmargin = 57;
 var freetext;
 
-
-piio.on("ready", () => {
-  realtime = new SlippiRealtimeConnector("switcher");
-  realtime.on("frame", (data) => {
-    if (data.gameEnd || data.lras) {
-      if (piio.cache.scoreboard.fields.switchtoend.enabled && ingame) {
-        ingame = false;
-        if (data.gameEnd == 7) {
-          if (!(scenename.includes('game'))) {
-            if (piio.cache.scoreboard.fields.switchtoend.value != scenename) {
-              window.obsstudio.setCurrentScene(piio.cache.scoreboard.fields.switchtoend.value);
-            }
-          }
-        } else if (!(scenename.includes('game'))) {
-          window.obsstudio.setCurrentScene(piio.cache.scoreboard.fields.switchtoend.value);
-
-        }
-      }
-    } else {
-      if (piio.cache.scoreboard.fields.switchtostart.enabled && !ingame) {
-        ingame = true;
-        if (piio.cache.scoreboard.fields.switchtostart.value != scenename) {
-          window.obsstudio.setCurrentScene(piio.cache.scoreboard.fields.switchtostart.value);
-        }
-      }
-    }
-  })
-});
-if (window.obsstudio != undefined) {
-  window.obsstudio.getCurrentScene(function (scene) {
-    scenename = scene.name;
-    if (scene.name.includes('game')) {
-      jQuery('#resultsdiv').animate({ bottom: "20px" }, 500, function () {
-        jQuery('.roundmargin').animate({ 'marginLeft': $('#resultsdiv').offset().left + $('#resultsdiv').width() - resultsmargin + 20 }, 500);
-      });
-      jQuery('#bottombar').animate(
+piio.on('obsSceneChanged', (scene)=>{
+  scenename = scene;
+  if (scene.includes('game')) {
+    jQuery('#resultsdiv').animate({ bottom: "20px" }, 500, function () {
+      jQuery('.roundmargin').animate({ 'marginLeft': $('#resultsdiv').offset().left + $('#resultsdiv').width() - resultsmargin + 20 }, 500);
+    });
+    jQuery('#bottombar').animate(
         {
           left: "0px",
           width: 2395 / 24 + 'vw', //VW = 100*(px anzahl / 1920)
@@ -57,11 +28,11 @@ if (window.obsstudio != undefined) {
           borderBottomRightRadius: "0px",
           bottom: "0px"
         }, 500);
-    } else {
-      jQuery('#teamresult').animate({ bottom: "45px" }, 500, () => {
-        jQuery('.roundmargin').animate({ 'marginLeft': $('#resultsdiv').offset().left + $('#resultsdiv').width() - resultsmargin + 20 }, 500);
-      });
-      jQuery('#bottombar').animate(
+  } else {
+    jQuery('#teamresult').animate({ bottom: "45px" }, 500, () => {
+      jQuery('.roundmargin').animate({ 'marginLeft': $('#resultsdiv').offset().left + $('#resultsdiv').width() - resultsmargin + 20 }, 500);
+    });
+    jQuery('#bottombar').animate(
         {
           left: "50px",
           width: 1135 / 12 + 'vw', //VW = 100*(px anzahl / 1920)
@@ -69,9 +40,8 @@ if (window.obsstudio != undefined) {
           borderBottomRightRadius: "15px",
           bottom: "25px"
         }, 500);
-    }
-  });
-}
+  }
+});
 
 piio.on("scoreboard", async (data) => {
   if (piio.cache.scoreboard.fields.location.value != locationvar) {

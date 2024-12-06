@@ -6,6 +6,14 @@
 	],
 	"author": "Oolonk",
 	"caster": 2,
+	"folders": {
+		"css": "styles",
+		"js": "scripts"
+	},
+	"scripts": [
+		"assets/script/jquery.js",
+		"assets/script/jquery-ui.js"
+	],
 	"fields": [
 		{
 			"name": "round",

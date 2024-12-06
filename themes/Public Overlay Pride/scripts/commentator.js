@@ -68,14 +68,14 @@ function updateTop(i, hidden) {
             jQuery(`#c${y}flag1`).css('background-image', ``);
             jQuery(`#c${y}flag2`).css('background-image', ``);
         } else if (caster.pride.length == 1) {
-            jQuery(`#c${y}flag1`).css('background-image', `url(assets/pride/${caster.pride[0]}.svg)`);
-            jQuery(`#c${y}flag2`).css('background-image', `url(assets/pride/${caster.pride[0]}.svg)`);
+            jQuery(`#c${y}flag1`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + caster.pride[0])})`);
+            jQuery(`#c${y}flag2`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + caster.pride[0])})`);
         } else {
-            jQuery(`#c${y}flag1`).css('background-image', `url(assets/pride/${caster.pride[0]}.svg)`);
-            jQuery(`#c${y}flag2`).css('background-image', `url(assets/pride/${caster.pride[1]}.svg)`);
+            jQuery(`#c${y}flag1`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + caster.pride[0])})`);
+            jQuery(`#c${y}flag2`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + caster.pride[1])})`);
         }
         jQuery(`#c${y}team`).text(caster.team.length > 0 ? piio.cache.team[caster.team].prefix : '');
-        jQuery(`#c${y}teamicon`).css('background-image', caster.team.length > 0 ? `url(assets/team/${caster.team}.svg)` : '');
+        jQuery(`#c${y}teamicon`).css('background-image', caster.team.length > 0 ? `url(${piio.getPictureUrl('assets/team/' + caster.team)})` : '');
         jQuery(`#c${y}name`).text(caster.name);
         jQuery(`#c${y}pron`).text(caster.pronoun);
         jQuery(`#playertext${y}`).css({ 'font-size': '25px' });

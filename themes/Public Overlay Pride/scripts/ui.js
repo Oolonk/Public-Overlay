@@ -176,7 +176,7 @@ piio.on("slippiFrame", (data) => {
       //jQuery("#playercolor" + y).css({'width':slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.shieldSize*(55/12)});
       jQuery(`.perc${y}`).css({ 'color': `rgb(${Math.floor(256 - ((slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.percent / 500) * 256))}, ${Math.floor(256 - ((slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.percent / 250) * 256))}, ${Math.floor(256 - ((slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.percent / 250) * 256))})` });
 
-      jQuery(`.stock${y}`).attr("src", `assets/slippi/char/stock-icon-${internalID(slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.internalCharacterId)}-${slippi2.settings.players[i].characterColor}.png`);
+      jQuery(`.stock${y}`).attr("src", piio.getPictureUrl(`assets/slippi/char/stock-icon-${internalID(slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.internalCharacterId)}-${slippi2.settings.players[i].characterColor}`));
       jQuery(`#percentage${y}`).text(Math.floor(slippi2.frame.players[slippi2.settings.players[i].playerIndex].post.percent));
       if (nana_perc) {
         jQuery(`#playercombo${y}`).css('opacity', '0');
@@ -579,7 +579,7 @@ function introsingles(test) {
         jQuery(`#intro_name${y}_text`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).name);
         if (piio.getPlayerTeams(playerPosition[0], playerPosition[1])[0] != undefined)
           jQuery(`#intro_team${y}_text`).text(piio.getPlayerTeams(playerPosition[0], playerPosition[1])[0].name);
-        jQuery(`#intro_p${y}logo`).css("background-image", `url(assets/team/${piio.getPlayer(playerPosition[0], playerPosition[1]).team[0]}.svg)`);
+        jQuery(`#intro_p${y}logo`).css("background-image", `url(${piio.getPictureUrl('assets/team/' + piio.getPlayer(playerPosition[0], playerPosition[1]).team[0])})`);
 
       }
     }
@@ -680,7 +680,7 @@ function introdoubles(test) {
         console.log(`#intro_player${i + 1}name${z + 1}_text`);
         $(`#intro_player${y + 1}name${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
         $(`#intro_player${y + 1}team${i + 1}_text`).text(piio.getPlayer(ports[0], ports[1]).name);
-        jQuery(`#intro_team${y + 1}p${i + 1}logo`).css("background-image", `url(assets/team/${piio.getPlayer(ports[0], ports[1]).team[0]}.svg)`);
+        jQuery(`#intro_team${y + 1}p${i + 1}logo`).css("background-image", `url(${piio.getPictureUrl('assets/team/' + piio.getPlayer(ports[0], ports[1]).team[0])})`);
       }
     }
     $('#intro_team1_text').text(piio.getTeamName(teamlinkstrue));
@@ -846,7 +846,7 @@ function introcrews(test) {
         jQuery(`#intro_name${y}_text`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).name);
         if (piio.getPlayerTeams(playerPosition[0], playerPosition[1])[0] != undefined)
           jQuery(`#intro_team${y}_text`).text(piio.getPlayerTeams(playerPosition[0], playerPosition[1])[0].name);
-        jQuery(`#intro_p${y}logo`).css("background-image", `url(assets/team/${piio.getPlayer(playerPosition[0], playerPosition[1]).team[0]}.svg)`);
+        jQuery(`#intro_p${y}logo`).css("background-image", `url(${piio.getPictureUrl('assets/team/' + piio.getPlayer(playerPosition[0], playerPosition[1]).team[0])})`);
 
       }
     }
@@ -920,11 +920,11 @@ function playerUpdate(portArray) {
               jQuery(`#playerflag${y}1`).css('background-image', ``);
               jQuery(`#playerflag${y}2`).css('background-image', ``);
             } else if (piio.getPlayer(playerPosition[0], playerPosition[1]).pride.length == 1) {
-              jQuery(`#playerflag${y}1`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
-              jQuery(`#playerflag${y}2`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
+              jQuery(`#playerflag${y}1`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0])})`);
+              jQuery(`#playerflag${y}2`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0])})`);
             } else {
-              jQuery(`#playerflag${y}1`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0]}.svg)`);
-              jQuery(`#playerflag${y}2`).css('background-image', `url(assets/pride/${piio.getPlayer(playerPosition[0], playerPosition[1]).pride[1]}.svg)`);
+              jQuery(`#playerflag${y}1`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + piio.getPlayer(playerPosition[0], playerPosition[1]).pride[0])})`);
+              jQuery(`#playerflag${y}2`).css('background-image', `url(${piio.getPictureUrl('assets/pride/' + piio.getPlayer(playerPosition[0], playerPosition[1]).pride[1])})`);
             }
             jQuery(`#playername${y}`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).name);
             jQuery(`#playerpronoun${y}`).text(piio.getPlayer(playerPosition[0], playerPosition[1]).pronoun.toLowerCase());
@@ -947,7 +947,7 @@ function playerUpdate(portArray) {
               team[port] = piio.getPlayer(playerPosition[0], playerPosition[1]).team[0];
               teamName = piio.getPlayerTeams(playerPosition[0], playerPosition[1])[0].name;
             }
-            jQuery("#playerteamlogo" + y).css('background-image', `url(assets/team/${piio.getPlayer(playerPosition[0], playerPosition[1]).team[0]}.svg)`);
+            jQuery("#playerteamlogo" + y).css('background-image', `url(${piio.getPictureUrl('assets/team/' + piio.getPlayer(playerPosition[0], playerPosition[1]).team[0])})`);
             jQuery(`#playerteam${y}`).text(teamName);
             jQuery(`#playerteam${y}`).css({ 'font-size': "25px" });
             while (jQuery(`#playerteam${y}`).width() > 207) {

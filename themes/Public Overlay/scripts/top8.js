@@ -162,7 +162,7 @@ async function loopSide(winners, data) {
             if (slot.entrant.participants[0].player.user != null && slot.entrant.participants[0].player.user.location != null) {
               let countryCode = getCountryCode(slot.entrant.participants[0].player.user.location.countryId);
               if (await countryCode != null) {
-                $(`#${side}${roundCount}${gameCount}${slotId}country`).css('background-image', `url(assets/startgg/country/${(await countryCode).toLowerCase()}.svg)`);
+                $(`#${side}${roundCount}${gameCount}${slotId}country`).css('background-image', `url(${piio.getPictureUrl('assets/startgg/country/' + (await countryCode).toLowerCase())})`);
               }
             }
           } else {

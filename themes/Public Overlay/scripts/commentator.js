@@ -62,9 +62,9 @@ function updateTop(i, hidden) {
     let caster = piio.cache.scoreboard.caster[i];
     jQuery(`#c${y}top`).CSSAnimate({ scale: 0 }, duration, () => {
         commentator[i] = caster.name;
-        jQuery(`#c${y}flag`).css('background-image', 'url(assets/country/' + caster.country + '.svg)');
+        jQuery(`#c${y}flag`).css('background-image', `url(${piio.getPictureUrl('assets/country/' + caster.country)}`);
         jQuery(`#c${y}team`).text(caster.team.length > 0 ? piio.cache.team[caster.team].prefix : '');
-        jQuery(`#c${y}teamicon`).css('background-image', caster.team.length > 0 ? `url(assets/team/${caster.team}.svg)` : '');
+        jQuery(`#c${y}teamicon`).css('background-image', caster.team.length > 0 ? `url(${piio.getPictureUrl('assets/team/' + caster.team)})` : '');
         jQuery(`#c${y}name`).text(caster.name);
         jQuery(`#c${y}pron`).text(caster.pronoun);
         jQuery(`#playertext${y}`).css({ 'font-size': '25px' });
